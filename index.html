@@ -2,22 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>Christian Coulibaly</title>
+    <title>naj-dev</title>
+
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta author="naj-dev">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body class="design">
-    <div class="design"></div>
     <header>
-
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
                 <!-- Navbar brand -->
-                <a class="navbar-brand me-2">
+                <a class="navbar-brand me-2 col">
                     <img src="assets\naj-dev text.png" width="128" alt="naj-dev logo" loading="lazy" />
                 </a>
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -25,13 +29,13 @@
                     aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarExample01">
+                <div class="collapse navbar-collapse col-4" id="navbarExample01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#" id="scroll-projects">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Links</a>
@@ -44,26 +48,62 @@
             </div>
         </nav>
         <!-- Navbar -->
-
-        <!-- Description -->
+    </header>
+    <!-- Description -->
+    <div class="row">
         <div class="col-md-2 offset-md-1">
-                <img id="profilePic" src="assets/main photo.jpg" alt="Christian Coulibaly">
-            </div>
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="text-white">
-                        <h1 class="mb-3">Hey, I'm Naj</h1>
-                        <h5 class="mb-4">I'm a fourth year Software Engineering student...</h5>
-                        <a class="btn btn-outline-light btn-lg m-2" href="#"
-                            role="button" rel="nofollow" target="_blank">View Projects</a>
-                        <a class="btn btn-outline-light btn-lg m-2" href="#"
-                            target="_blank" role="button">View Resume</a>
-                    </div>
+            <img src="assets/main photo.jpg" alt="Christian Coulibaly" id="profilePic">
+        </div>
+        <div class="col-md-7 offset-md-1 description" id="description">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div>
+                    <h1 class="mb-3">Hey, I'm Naj</h1>
+                    <h5 class="mb-4">I'm a fourth year Software Engineering student...</h5>
+                    <a class="btn btn-outline-light btn-lg m-2" href="#">View Projects</a>
+                    <a class="btn btn-outline-light btn-lg m-2" href="#">View Resume</a>
                 </div>
             </div>
-        
-        <!-- Description -->
-    </header>
+        </div>
+    </div>
+    <div id="projects" class="row justify-content-center">
+        <div class="row">
+            <div class="col">
+                <a>This Page</a>
+            </div>
+            <div class="col">
+                <a>Timetracker</a>
+            </div>
+            <div class="col">
+                <a>Movie Center</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <a>Weather App</a>
+            </div>
+            <div class="col">
+                <a>PCs and Servers</a>
+            </div>
+            <div class="col">
+                <a>Calculator</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a>Java Class Generator</a>
+            </div>
+            <div class="col">
+                <a>tbd</a>
+            </div>
+            <div class="col">
+                <a>tbd</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Description -->
 </body>
 
 

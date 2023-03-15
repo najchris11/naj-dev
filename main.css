@@ -20,14 +20,21 @@
 #profilePic {
     /* margin-top: 7.5em;
     margin-bottom: 7.5em; */
+    width: 15em;
     height: 15em;
     border-style: solid;
-    border-color: rgb(255, 243, 243);
+    border-color: rgb(255,243,243);
     border-radius: 50%;
-    box-shadow: 0 30px 40px rgba(0, 0, 0, .1);
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
     margin-top: 2em;
     margin-bottom: 2em;
 }
+#description {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2em;
+    color:#FFFFFF
+}
+
 nav {
     border-bottom-color: black;
     border-bottom-width: 2em;
