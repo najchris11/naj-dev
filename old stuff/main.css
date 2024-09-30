@@ -39,3 +39,10 @@ nav {
     border-bottom-color: black;
     border-bottom-width: 2em;
 }
+.link-section {
+background-color: whitesmoke;
+border-color: #44AA00;
+border-style: solid;
+border-radius: 2em;
+justify-self: center;
+}
