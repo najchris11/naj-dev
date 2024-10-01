@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import { StrictMode } from "react";
 
 
 // const geistSans = localFont({
@@ -21,13 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
+    <StrictMode>
+      <html lang="en">
+        <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
-      </body>
-    </html>
+        >
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </StrictMode>
+
   );
 }
