@@ -39,6 +39,14 @@ body {
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    /* Background Pattern for Light Mode */
+    --background-pattern-color-1: hsl(var(--background));
+    --background-pattern-color-2: hsl(var(--primary));
+    --background-pattern: radial-gradient(circle, transparent 20%, var(--background-pattern-color-1) 20%, var(--background-pattern-color-1) 80%, transparent 80%, transparent),
+                          radial-gradient(circle, transparent 20%, var(--background-pattern-color-1) 20%, var(--background-pattern-color-1) 80%, transparent 80%, transparent) 25px 25px,
+                          linear-gradient(var(--background-pattern-color-2) 2px, transparent 2px) 0 -1px,
+                          linear-gradient(90deg, var(--background-pattern-color-2) 2px, var(--background-pattern-color-1) 2px) -1px 0;
+    --background-pattern-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
   }
 
   .dark {
@@ -66,6 +74,13 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --background-pattern-color-1: hsl(var(--background));
+    --background-pattern-color-2: hsl(var(--primary));
+    --background-pattern: radial-gradient(circle, transparent 20%, var(--background-pattern-color-1) 20%, var(--background-pattern-color-1) 80%, transparent 80%, transparent),
+                          radial-gradient(circle, transparent 20%, var(--background-pattern-color-1) 20%, var(--background-pattern-color-1) 80%, transparent 80%, transparent) 25px 25px,
+                          linear-gradient(var(--background-pattern-color-2) 2px, transparent 2px) 0 -1px,
+                          linear-gradient(90deg, var(--background-pattern-color-2) 2px, var(--background-pattern-color-1) 2px) -1px 0;
+    --background-pattern-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
   }
 }
 
@@ -74,6 +89,9 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground min-h-screen;
+    background-image: var(--background-pattern);
+    background-size: var(--background-pattern-size);
+    background-repeat: repeat;
   }
 }
