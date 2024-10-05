@@ -1,12 +1,14 @@
 "use client"
 
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import { Button } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import najDevBrand from "@/assets/naj-dev-text.png"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import React from "react";
+import { ModeToggle } from "./ModeToggle";
 
 const projects: { title: string; href: string; description: string }[] = [
     {
@@ -122,6 +124,10 @@ export const Navbar = () => {
 
                 <div className="flex items-center space-x-4">
                     <div className="h-6 border-l border-green-600" />
+                    <ModeToggle />
+                    <Button variant="outline" size="icon" onClick={()=> {}}>
+                        <FaGithub size={20} />
+                    </Button>
                     <Link href="https://github.com/najchris11" target="_blank" rel="noopener noreferrer">
                         <FaGithub size={20} />
                     </Link>
