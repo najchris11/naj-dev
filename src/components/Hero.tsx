@@ -26,42 +26,6 @@ export default function Hero() {
               Contact me
             </Button>
           </div>
-          {/* Reviews */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Review 1 */}
-            <div>
-              <div className="flex space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="h-4 w-4 text-yellow-500" />
-                ))}
-              </div>
-              <p className="mt-2 text-sm">
-                <span className="font-bold">4.6</span> /5 - from 12k reviews
-              </p>
-              {/* Company Logo */}
-              <div className="mt-4">
-                {/* Replace with actual logo */}
-                <img src="" alt="Company Logo 1" className="h-8" />
-              </div>
-            </div>
-            {/* Review 2 */}
-            <div>
-              <div className="flex space-x-1">
-                {[...Array(4)].map((_, i) => (
-                  <FaStar key={i} className="h-4 w-4 text-yellow-500" />
-                ))}
-                <FaStarHalfAlt className="h-4 w-4 text-yellow-500" />
-              </div>
-              <p className="mt-2 text-sm">
-                <span className="font-bold">4.8</span> /5 - from 5k reviews
-              </p>
-              {/* Company Logo */}
-              <div className="mt-4">
-                {/* Replace with actual logo */}
-                <img src="" alt="Company Logo 2" className="h-8" />
-              </div>
-            </div>
-          </div>
         </div>
         {/* Right Column */}
         <div className="relative">
