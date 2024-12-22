@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { FaStar, FaStarHalfAlt } from "react-icons/fa"; // Import React Icons
+// import { FaStar, FaStarHalfAlt } from "react-icons/fa"; // Import React Icons
 import ProfilePic from "@/assets/main photo.jpg"
 
 export default function Hero() {
