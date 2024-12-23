@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTiktok, FaYoutube } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
@@ -26,12 +26,20 @@ export const Footer = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://twitter.com/your-profile"
+            href="https://www.tiktok.com/@naj_dev"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition"
           >
-            <FaTwitter size={24} />
+            <FaTiktok size={24} />
+          </a>
+          <a
+            href="https://www.youtube.com/@naj-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition"
+          >
+            <FaYoutube size={24} />
           </a>
         </div>
       </div>

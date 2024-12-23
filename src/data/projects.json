@@ -1,0 +1,210 @@
+[
+  {
+    "title": "JP Morgan Chase Internship Project",
+    "description": "Developed a new React frontend for an internal tool used by thousands of legal entities.",
+    "techStack": ["React", "Redux", "Jest", "Webpack", "TypeScript"],
+    "achievements": [
+      "Collaborated with UX and product teams to deliver a microfrontend",
+      "Designed for 99% uptime to support developers maintaining critical services"
+    ],
+    "githubRepo": null,
+    "role": "Frontend Developer",
+    "status": "In Progress",
+    "date": "Summer 2024 - Present",
+    "additionalNotes": "Strong focus on communication and independent development."
+  },
+  {
+    "title": "Jump The Broom Books Website",
+    "description": "A responsive website for Jump The Broom Books, showcasing its offerings and providing an online presence.",
+    "techStack": ["Next.js", "React", "Tailwind CSS", "Vercel"],
+    "achievements": [
+      "Created a user-friendly website to enhance visibility and engagement.",
+      "Ensured responsive design across devices.",
+      "Delivered a scalable solution using modern web technologies."
+    ],
+    "githubRepo": "https://github.com/najchris11/jtbbooks",
+    "role": "Frontend Developer",
+    "status": "In Progress",
+    "date": "2024 - Present",
+    "additionalNotes": "This project highlights the ability to craft modern, responsive websites for specialized use cases."
+  },
+  {
+    "title": "Next.js Lightweight CMS",
+    "description": "A lightweight CMS built with Next.js for dynamic content management, designed for portfolio projects and small-scale websites.",
+    "techStack": ["Next.js", "TypeScript", "MUI", "ShadCN UI", "Vercel"],
+    "achievements": [
+      "Integrated rich-text editing and Markdown support for posts.",
+      "Designed a modular architecture to support scalability across different applications.",
+      "Planned for dynamic content management via a headless CMS setup."
+    ],
+    "githubRepo": null,
+    "role": "Fullstack Developer",
+    "status": "In Progress",
+    "date": "2024 - Present",
+    "additionalNotes": "This project will serve as the foundation for several portfolio pieces, showcasing a focus on usability and modular design."
+  },
+  {
+    "title": "AI-Powered Playlist Generator",
+    "description": "A machine learning project designed to analyze Last.fm data and generate 20-song playlists based on user preferences and song similarities.",
+    "techStack": [
+      "Python",
+      "Last.fm API",
+      "OpenAI APIs",
+      "Pandas",
+      "Machine Learning"
+    ],
+    "achievements": [
+      "Developed a pipeline to fetch and process user listening data from the Last.fm API.",
+      "Planned for AI-based song similarity analysis using OpenAI models.",
+      "Designed an intuitive interface for generating and exporting playlists."
+    ],
+    "githubRepo": null,
+    "role": "Data Scientist & Developer",
+    "status": "In Progress",
+    "date": "2024 - Present",
+    "additionalNotes": "This project combines music analysis with machine learning to provide personalized playlist recommendations."
+  },
+  {
+    "title": "ECE 2360 Final Project",
+    "description": "Temperature-activated lamp with RGB LED, LCD, and buzzer functionality.",
+    "techStack": ["Arduino IDE", "C++", "DHT Sensor", "RGB LED", "LCD Display"],
+    "achievements": [
+      "Combined sensors and microcontroller programming to create a cohesive hardware project",
+      "Resolved hardware and software troubleshooting challenges"
+    ],
+    "githubRepo": "https://github.com/najchris11/ECE-2360-Final",
+    "role": "Embedded Developer",
+    "status": "Completed",
+    "date": "Spring 2024",
+    "additionalNotes": "Learned new hardware components and applied GitHub for collaboration."
+  },
+  {
+    "title": "M.C. Jeter’s Website",
+    "description": "A portfolio website for M.C. Jeter showcasing her authorial works.",
+    "techStack": ["HTML", "Bootstrap", "Vercel"],
+    "achievements": [
+      "Faster load times with a revamped design",
+      "Estimated 25% uplift in sales and social media interactions"
+    ],
+    "githubRepo": "https://github.com/najchris11/mcjeterbooks",
+    "role": "Frontend Developer",
+    "status": "Completed",
+    "date": "2023",
+    "additionalNotes": "Early experience with static site generation and user experience improvement. New iteration planned for 2025 that moves to a website using my lightweight CMS."
+  },
+  {
+    "title": "HDNCHQ Server Management",
+    "description": "Managed and optimized a personal server for hosting media and productivity tools.",
+    "techStack": ["Unraid", "Docker", "SWAG", "Cloudflare Tunnels", "OpenWRT"],
+    "achievements": [
+      "Improved server uptime from ~40% to 95%",
+      "Sextupled server performance with better resource allocation"
+    ],
+    "githubRepo": null,
+    "role": "System Administrator",
+    "status": "In Progress",
+    "date": "2019 - Present",
+    "additionalNotes": "Showcased advanced configuration skills and self-hosting expertise."
+  },
+  {
+    "title": "Naj's PCs",
+    "description": "A series of custom PC builds designed for resale, personal use, and clients, focusing on gaming, productivity, and server applications.",
+    "techStack": [
+      "System Building and Compatibility Analysis",
+      "Hardware Debugging and Testing",
+      "OS Installation and Configuration",
+      "Cooling and Power Optimization",
+      "Performance Benchmarking",
+      "Software Installation and Validation"
+    ],
+    "achievements": [
+      "Delivered high-performance gaming PCs and silent, efficient servers tailored to client needs.",
+      "Optimized hardware configurations for reliability and maximum efficiency.",
+      "Successfully debugged and resolved compatibility issues in complex builds.",
+      "Configured operating systems, software, and drivers for smooth user experiences."
+    ],
+    "githubRepo": null,
+    "role": "System Integrator",
+    "status": "Ongoing",
+    "date": "2021 - Present",
+    "additionalNotes": "This project showcases advanced expertise in building custom PCs for various applications, including gaming, media servers, and productivity setups. Demonstrated the ability to adapt to client requirements and innovate solutions for performance, acoustics, and aesthetics."
+  },
+  {
+    "title": "XPS9570-Opencore-IntelWifi",
+    "description": "An OpenCore EFI configuration for the Dell XPS 15 9570 with Intel WiFi, enabling macOS installation and optimization.",
+    "techStack": [
+      "OpenCore",
+      "ACPI Source Language (ASL)",
+      "Hackintosh Customization"
+    ],
+    "achievements": [
+      "Provided a tailored EFI folder for macOS installation.",
+      "Included necessary ACPI patches and kexts for hardware functionality.",
+      "Facilitated a seamless macOS experience on non-Apple hardware."
+    ],
+    "githubRepo": "https://github.com/najchris11/XPS9570-Opencore-IntelWifi",
+    "role": "System Integrator",
+    "status": "Completed",
+    "date": "2021",
+    "additionalNotes": "No longer updated; users are directed to alternative repositories for continued support."
+  },
+  {
+    "title": "Mobile App Development Projects",
+    "description": "A collection of mobile applications developed using C# and Xamarin.Forms.",
+    "techStack": ["C#", "Xamarin.Forms", "SQL", "Visual Studio"],
+    "achievements": [
+      "Created various mobile apps, including AudioPlayer and JSONDemo",
+      "Gained experience in database integration for data persistence"
+    ],
+    "githubRepo": "https://github.com/najchris11/Mobile-App-Dev-Projects",
+    "role": "Mobile App Developer",
+    "status": "Completed",
+    "date": "Summer 2021",
+    "additionalNotes": "Demonstrated proficiency in mobile UI design, event handling, and data management."
+  },
+  {
+    "title": "Web Application Development Final Project",
+    "description": "Web application consuming a RESTful API, developed during a Web App Development course.",
+    "techStack": ["HTML", "CSS (Bootstrap)", "JavaScript", "PHP"],
+    "achievements": [
+      "Responsive design implemented with Bootstrap",
+      "Dynamic content fetching from external APIs"
+    ],
+    "githubRepo": "https://github.com/najchris11/Web-App-Development-Final",
+    "role": "Fullstack Developer",
+    "status": "Completed",
+    "date": "Spring 2021",
+    "additionalNotes": "Certain features may be limited due to removed API keys. Application is no longer deployed."
+  },
+  {
+    "title": "Checklist",
+    "description": "A desktop application developed using Java Swing to provide users with a simple and intuitive interface for creating and managing checklists.",
+    "techStack": ["Java", "Swing", "JFrame"],
+    "achievements": [
+      "Designed a user-friendly interface for task management.",
+      "Implemented basic file operations for saving and loading checklists.",
+      "Gained experience in desktop application development with Java."
+    ],
+    "githubRepo": "https://github.com/najchris11/Checklist",
+    "role": "Developer",
+    "status": "Completed",
+    "date": "2019",
+    "additionalNotes": "This project was an exercise in building desktop applications using Java Swing, focusing on creating a functional and user-friendly checklist tool.",
+    "youtubeUrl": "https://www.youtube.com/watch?v=N78VHvh5U-0&t=2385s"
+  },
+  {
+    "title": "Java Projects Repository",
+    "description": "A compilation of Java projects showcasing various programming concepts and problem-solving skills.",
+    "techStack": ["Java", "Eclipse IDE"],
+    "achievements": [
+      "Developed multiple applications, including a Barcode Encoder and Class Generator.",
+      "Applied object-oriented programming principles effectively.",
+      "Gained experience in implementing algorithms and designing reusable code."
+    ],
+    "githubRepo": "https://github.com/najchris11/java-projects",
+    "role": "Software Developer",
+    "status": "Completed",
+    "date": "2019",
+    "additionalNotes": "Reflects foundational skills in Java programming and the ability to tackle diverse challenges."
+  }
+]
