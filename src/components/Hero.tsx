@@ -1,13 +1,12 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-// import { FaStar, FaStarHalfAlt } from "react-icons/fa"; // Import React Icons
 import ProfilePic from '@/assets/main photo.jpg';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
     <section className='pb-24 pt-12 lg:pb-32 lg:pt-16'>
       <div className='container mx-auto px-4'>
-        {/* Grid Layout */}
         <div className='grid items-center gap-8 md:grid-cols-2'>
           {/* Left Column */}
           <div>
@@ -18,20 +17,19 @@ export default function Hero() {
               Software Engineering student with a passion for computing and
               developing fun and exciting solutions to new problems.
             </p>
-            {/* Buttons */}
             <div className='mt-6 flex flex-wrap gap-4'>
-              <Button size='lg'>See Projects</Button>
-              <Button variant='outline' size='lg'>
-                Contact me
+              <Button variant='outline' size='lg' className='text-primary'>
+                <Link href='/about'>Learn More About Me</Link>
               </Button>
+              <Button size='lg'><Link href='/projects'>See Projects</Link></Button>
             </div>
           </div>
           {/* Right Column */}
           <div className='relative'>
             <Image
-              className='w-full rounded-md'
+              className='w-full rounded-md border border-border'
               src={ProfilePic}
-              alt='Image Description'
+              alt='Profile picture of Christian Coulibaly'
               width={800}
               height={700}
             />

@@ -15,12 +15,13 @@ import najDevBrand from '@/assets/naj-dev-text.png';
 import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import React from 'react';
 import { ModeToggle } from './ModeToggle';
+import { Separator } from '@/components/ui/separator';
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className='border-b p-4'>
+    <nav className='sticky top-0 z-50 border-b bg-background p-4'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
           <Image src={najDevBrand} alt='Brand logo' height={40} width={100} />
@@ -90,7 +91,7 @@ export const Navbar = () => {
 
         {/* Social Icons and Mode Toggle */}
         <div className='flex items-center space-x-2'>
-          <div className='h-6 border-l border-primary' />
+          <Separator orientation='vertical' className='h-6' />
           <ModeToggle />
           <Button variant='outline' size='icon'>
             <Link
@@ -115,7 +116,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className='mt-2 md:hidden'>
+        <div className='mt-2 rounded-md bg-muted p-4 text-muted-foreground shadow-lg md:hidden'>
           <NavigationMenu>
             <NavigationMenuList className='flex flex-col space-y-2'>
               {/* Mobile Navigation Items */}

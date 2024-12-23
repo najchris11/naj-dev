@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-// import localFont from "next/font/local";
 import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { StrictMode } from 'react';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'naj-dev',
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <StrictMode>
       <html lang='en' suppressHydrationWarning>
-        <body>
+        <body className="flex flex-col min-h-screen">
           <ThemeProvider
             attribute='class'
             defaultTheme='system'
@@ -26,7 +26,8 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            {children}
+            <main className="flex-grow">{children}</main>
+            <Footer />
           </ThemeProvider>
         </body>
       </html>
