@@ -1,11 +1,26 @@
 [
   {
+    "title": "Naj-Dev Portfolio Website",
+    "description": "A modern portfolio website showcasing my projects, skills, and experience, built using Next.js and other cutting-edge technologies. Future enhancements will include integrating the T3 stack for backend functionality.",
+    "techStack": ["Next.js", "TypeScript", "MUI", "ShadCN UI", "Vercel"],
+    "achievements": [
+      "Designed a visually appealing and responsive user interface.",
+      "Implemented a modular structure for scalability and reusability.",
+      "Showcased a dynamic project grid with support for embedded videos and images."
+    ],
+    "githubRepo": null,
+    "role": "Fullstack Developer",
+    "status": "In Progress",
+    "date": "2024 - Present",
+    "additionalNotes": "This portfolio website reflects my growth as a developer, combining frontend and backend technologies in a cohesive manner. Future plans include integrating the T3 stack for backend support, implementing user interactions like comments and reactions, adding advanced animations, and leveraging server-side rendering for enhanced performance. It's a hub for all my projects and a platform for self-expression!"
+  },
+  {
     "title": "JP Morgan Chase Internship Project",
     "description": "Developed a new React frontend for an internal tool used by thousands of legal entities.",
     "techStack": ["React", "Redux", "Jest", "Webpack", "TypeScript"],
     "achievements": [
-      "Collaborated with UX and product teams to deliver a microfrontend",
-      "Designed for 99% uptime to support developers maintaining critical services"
+      "Collaborated with UX and product teams to deliver a microfrontend architecture.",
+      "Designed for 99% uptime to support developers maintaining critical services."
     ],
     "githubRepo": null,
     "role": "Frontend Developer",
@@ -26,7 +41,9 @@
     "role": "Frontend Developer",
     "status": "In Progress",
     "date": "2024 - Present",
-    "additionalNotes": "This project highlights the ability to craft modern, responsive websites for specialized use cases."
+    "additionalNotes": "This project highlights the ability to craft modern, responsive websites for specialized use cases.",
+    "image": "jtbbooks.jpeg",
+    "imageDescription": "Jump The Broom Books Website Screenshot"
   },
   {
     "title": "Next.js Lightweight CMS",
@@ -76,7 +93,9 @@
     "role": "Embedded Developer",
     "status": "Completed",
     "date": "Spring 2024",
-    "additionalNotes": "Learned new hardware components and applied GitHub for collaboration."
+    "additionalNotes": "Learned new hardware components and applied GitHub for collaboration.",
+    "image": "ece2360.jpg",
+    "imageDescription": "Picture of breadboard powered down."
   },
   {
     "title": "M.C. Jeter’s Website",
@@ -90,7 +109,9 @@
     "role": "Frontend Developer",
     "status": "Completed",
     "date": "2023",
-    "additionalNotes": "Early experience with static site generation and user experience improvement. New iteration planned for 2025 that moves to a website using my lightweight CMS."
+    "additionalNotes": "Early experience with static site generation and user experience improvement. New iteration planned for 2025 that moves to a website using my lightweight CMS.",
+    "image": "mcjeterbooks.jpeg",
+    "imageDescription": "M.C. Jeter's Website Screenshot"
   },
   {
     "title": "HDNCHQ Server Management",
@@ -104,7 +125,9 @@
     "role": "System Administrator",
     "status": "In Progress",
     "date": "2019 - Present",
-    "additionalNotes": "Showcased advanced configuration skills and self-hosting expertise."
+    "additionalNotes": "Showcased advanced configuration skills and self-hosting expertise.",
+    "image": "hdnchq.jpg",
+    "imageDescription": "HDNCHQ Server with side panel removed."
   },
   {
     "title": "Naj's PCs",
@@ -127,7 +150,9 @@
     "role": "System Integrator",
     "status": "Ongoing",
     "date": "2021 - Present",
-    "additionalNotes": "This project showcases advanced expertise in building custom PCs for various applications, including gaming, media servers, and productivity setups. Demonstrated the ability to adapt to client requirements and innovate solutions for performance, acoustics, and aesthetics."
+    "additionalNotes": "This project showcases advanced expertise in building custom PCs for various applications, including gaming, media servers, and productivity setups. Demonstrated the ability to adapt to client requirements and innovate solutions for performance, acoustics, and aesthetics.",
+    "image": "najspcs.jpeg",
+    "imageDescription": "One of Naj's custom PC builds."
   },
   {
     "title": "XPS9570-Opencore-IntelWifi",

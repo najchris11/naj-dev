@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import ProfilePic from '@/assets/main photo.jpg';
 import Link from 'next/link';
 
 export default function Hero() {
@@ -28,7 +27,7 @@ export default function Hero() {
           <div className='relative'>
             <Image
               className='w-full rounded-md border border-border'
-              src={ProfilePic}
+              src={`/images/main photo.jpg`}
               alt='Profile picture of Christian Coulibaly'
               width={800}
               height={700}

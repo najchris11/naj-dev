@@ -11,7 +11,6 @@ import {
 import { Button } from './ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import najDevBrand from '@/assets/naj-dev-text.png';
 import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import React from 'react';
 import { ModeToggle } from './ModeToggle';
@@ -24,7 +23,12 @@ export const Navbar = () => {
     <nav className='sticky top-0 z-50 border-b bg-background p-4'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
-          <Image src={najDevBrand} alt='Brand logo' height={40} width={100} />
+          <Image
+            src={`/logos/naj-dev-text.png`}
+            alt='Brand logo'
+            height={40}
+            width={100}
+          />
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}
