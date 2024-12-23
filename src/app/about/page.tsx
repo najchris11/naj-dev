@@ -6,20 +6,19 @@ import Link from 'next/link';
 
 const AboutPage = () => {
   return (
-    <div className='space-y-8 p-8'>
-      {/* Introduction Section */}
+    <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2">      {/* Introduction Section */}
       <Card className='shadow-md'>
         <CardHeader>
           <CardTitle className='text-3xl font-bold'>
-            Hi, I’m Christian 👋
+            Hi, I&apos;m Christian 👋
           </CardTitle>
         </CardHeader>
         <CardContent className='space-y-4'>
           <p>
-            I’m a passionate software developer with experience working on
+            I&apos;m a passionate software developer with experience working on
             innovative web projects, from designing accessible websites to
             building modern applications. I&apos;m currently studying at{' '}
-            <strong>The Ohio State University</strong>, where I’m actively
+            <strong>The Ohio State University</strong>, where I&apos;m actively
             involved in our chapter of{' '}
             <strong>National Society of Black Engineers (NSBE)</strong> and{' '}
             <strong>ColorStack</strong>.
@@ -68,7 +67,7 @@ const AboutPage = () => {
           </ul>
           <p>
             These hobbies inspire me to approach challenges with creativity and
-            provide balance in my life. Whether it’s curating music playlists or
+            provide balance in my life. Whether it&apos;s curating music playlists or
             tweaking network configurations, I love blending tech with fun.
           </p>
         </CardContent>
@@ -78,13 +77,13 @@ const AboutPage = () => {
       <Card className='shadow-md'>
         <CardHeader>
           <CardTitle className='text-2xl font-bold'>
-            Some Projects I’ve Worked On
+            Some Projects I&apos;ve Worked On
           </CardTitle>
         </CardHeader>
         <CardContent className='space-y-4'>
           <ul className='ml-6 list-disc space-y-2'>
             <li>
-              <strong>M.C. Jeter’s Portfolio Website</strong>: Built a fast,
+              <strong>M.C. Jeter&apos;s Portfolio Website</strong>: Built a fast,
               responsive site with an estimated 25% uplift in sales and social
               media interactions.
             </li>

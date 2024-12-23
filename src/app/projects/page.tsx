@@ -27,9 +27,9 @@ const ProjectsPage = () => {
   return (
     <div className='p-6'>
       <h2 className='mb-4 text-2xl font-bold'>My Projects</h2>
-      <div className='auto-rows-[minmax(10px, auto)] grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3'>
+      <div className="grid grid-cols-1 auto-rows-[minmax(100px,auto)] gap-6 sm:grid-cols-2 md:grid-cols-3">
         {projects.map((project: Project, index: number) => (
-          <Card key={index}>
+          <Card key={index} className='h-fit'>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
@@ -87,6 +87,14 @@ const ProjectsPage = () => {
                       </div>
                     )}
 
+                    {/* Display role */}
+                    {project.role && (
+                      <div>
+                        <h3 className='font-semibold'>Role:</h3>
+                        <p>{project.role}</p>
+                      </div>
+                    )}
+
                     {/* Display achievements */}
                     {project.achievements && (
                       <div>
@@ -131,7 +139,7 @@ const ProjectsPage = () => {
                   </div>
                   <DialogFooter>
                     <DialogClose asChild>
-                      <Button variant='outline' className="absolute top-2 right-2">Close</Button>
+                      <Button variant='outline'>Close</Button>
                     </DialogClose>
                   </DialogFooter>
                 </DialogContent>

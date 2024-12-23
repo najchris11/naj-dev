@@ -1,8 +1,8 @@
 [
   {
     "title": "Naj-Dev Portfolio Website",
-    "description": "A modern portfolio website showcasing my projects, skills, and experience, built using Next.js and other cutting-edge technologies. Future enhancements will include integrating the T3 stack for backend functionality.",
-    "techStack": ["Next.js", "TypeScript", "MUI", "ShadCN UI", "Vercel"],
+    "description": "A modern portfolio website showcasing my projects, skills, and experience, built using Next.js and other cutting-edge technologies.",
+    "techStack": ["Next.js", "TypeScript", "ShadCN UI", "Vercel"],
     "achievements": [
       "Designed a visually appealing and responsive user interface.",
       "Implemented a modular structure for scalability and reusability.",
@@ -13,6 +13,33 @@
     "status": "In Progress",
     "date": "2024 - Present",
     "additionalNotes": "This portfolio website reflects my growth as a developer, combining frontend and backend technologies in a cohesive manner. Future plans include integrating the T3 stack for backend support, implementing user interactions like comments and reactions, adding advanced animations, and leveraging server-side rendering for enhanced performance. It's a hub for all my projects and a platform for self-expression!"
+  },
+  {
+    "title": "Breakout Simulation Labs",
+    "description": "A multi-part lab series for creating and enhancing a Breakout game simulation, culminating in advanced skills like register management, assembly programming, and low-level memory operations.",
+    "techStack": [
+      "C",
+      "Assembly Language (x86)",
+      "Linked Lists",
+      "Dynamic Memory",
+      "Makefile",
+      "Graphics Library",
+      "Text Mode Debugging"
+    ],
+    "achievements": [
+      "Built a foundational game simulation in Lab 2 with single ball, paddle, and block mechanics.",
+      "Extended functionality in Lab 3 to support multiple objects, scoring, and linked list integration.",
+      "Developed custom linked list functions in Lab 4, including `insert`, `deleteSome`, `iterate`, and `sort`.",
+      "Implemented advanced memory management techniques to handle allocation failures gracefully.",
+      "Enhanced game mechanics with paddle deflection, bonus modes, and optimized output.",
+      "Gained expertise in assembly programming with register allocation, stack alignment, and efficient array operations from Lab 5.",
+      "Developed assembly functions to analyze audio data, track min/max values, and convert PCM to decibels."
+    ],
+    "githubRepo": null,
+    "role": "Software Developer",
+    "status": "Completed",
+    "date": "Fall 2024",
+    "additionalNotes": "This project was developed progressively across Labs 2-5, introducing increasing complexity and refining both high-level and low-level programming skills. Concepts like function pointers, stack alignment, and register usage from Lab 5 provided a deeper understanding of performance optimization and system-level programming. Insights from Lab 6 on assembly-level optimization, including efficient register use and memory handling, provided foundational knowledge for further enhancements."
   },
   {
     "title": "JP Morgan Chase Internship Project",
@@ -31,7 +58,7 @@
   {
     "title": "Jump The Broom Books Website",
     "description": "A responsive website for Jump The Broom Books, showcasing its offerings and providing an online presence.",
-    "techStack": ["Next.js", "React", "Tailwind CSS", "Vercel"],
+    "techStack": ["Next.js", "React", "Material UI", "Vercel"],
     "achievements": [
       "Created a user-friendly website to enhance visibility and engagement.",
       "Ensured responsive design across devices.",
@@ -48,7 +75,7 @@
   {
     "title": "Next.js Lightweight CMS",
     "description": "A lightweight CMS built with Next.js for dynamic content management, designed for portfolio projects and small-scale websites.",
-    "techStack": ["Next.js", "TypeScript", "MUI", "ShadCN UI", "Vercel"],
+    "techStack": ["Next.js", "TypeScript", "ShadCN UI", "Vercel"],
     "achievements": [
       "Integrated rich-text editing and Markdown support for posts.",
       "Designed a modular architecture to support scalability across different applications.",
@@ -96,6 +123,21 @@
     "additionalNotes": "Learned new hardware components and applied GitHub for collaboration.",
     "image": "ece2360.jpg",
     "imageDescription": "Picture of breadboard powered down."
+  },
+  {
+    "title": "Learning App - JPMorgan Chase Code for Good Hackathon",
+    "description": "A web application designed to bridge the education gap by providing personalized learning paths and resources for underserved communities. The project leverages cutting-edge technology to make learning accessible and engaging.",
+    "techStack": ["React", "Node.js", "Firebase", "Tailwind CSS"],
+    "achievements": [
+      "Won the JPMorgan Chase Code for Good Hackathon 2024 for innovative use of technology.",
+      "Developed personalized learning paths using dynamic content generation.",
+      "Implemented a resource hub with real-time updates and user-friendly navigation."
+    ],
+    "githubRepo": null,
+    "role": "Fullstack Developer",
+    "status": "Completed",
+    "date": "2023",
+    "additionalNotes": "This project was created during an intense 24-hour hackathon, showcasing teamwork and innovative problem-solving under pressure. The application demonstrated the power of technology in addressing educational challenges and won accolades for its impact and technical execution."
   },
   {
     "title": "M.C. Jeter’s Website",
@@ -200,6 +242,24 @@
     "status": "Completed",
     "date": "Spring 2021",
     "additionalNotes": "Certain features may be limited due to removed API keys. Application is no longer deployed."
+  },
+  {
+    "title": "Movie Center",
+    "description": "A Java-based application developed by my team Aviato for managing and viewing movie collections.",
+    "image": null,
+    "imageDescription": null,
+    "youtubeUrl": null,
+    "techStack": [
+      "Java"
+    ],
+    "achievements": [
+      "Developed a functional GUI for movie management",
+      "Implemented features for adding, viewing, and organizing movies"
+    ],
+    "date": "2021",
+    "status": "Completed",
+    "additionalNotes": "This project showcases proficiency in Java and GUI application development. Next steps could include enhancing the user interface and adding features like search and filter capabilities.",
+    "githubRepo": "https://github.com/hanhanhan0831/Movie-Center"
   },
   {
     "title": "Checklist",
