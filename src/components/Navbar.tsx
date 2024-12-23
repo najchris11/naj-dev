@@ -32,7 +32,7 @@ export const Navbar = () => {
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}
-        <div className='md:hidden'>
+        <div className='md:hidden flex items-center justify-center w-full'>
           <Button
             variant='ghost'
             onClick={() => {
@@ -129,7 +129,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/' onClick={() => setMenuOpen(false)}>
+                  <Link href='/' onClick={() => setMenuOpen(false)} className='w-full text-left'>
                     Home
                   </Link>
                 </NavigationMenuLink>
@@ -140,7 +140,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/about' onClick={() => setMenuOpen(false)}>
+                  <Link href='/about' onClick={() => setMenuOpen(false)} className='w-full text-left'>
                     About
                   </Link>
                 </NavigationMenuLink>
@@ -151,7 +151,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/projects'>Projects</Link>
+                  <Link href='/projects' onClick={() => setMenuOpen(false)} className='w-full text-left'>Projects</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
@@ -160,7 +160,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/resume'>Resume</Link>
+                  <Link href='/resume'onClick={() => setMenuOpen(false)} className='w-full text-left'>Resume</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
@@ -169,7 +169,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/contact' onClick={() => setMenuOpen(false)}>
+                  <Link href='/contact' onClick={() => setMenuOpen(false)} className='w-full text-left'>
                     Contact
                   </Link>
                 </NavigationMenuLink>
