@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <StrictMode>
       <html lang='en' suppressHydrationWarning>
-        <body className="flex flex-col min-h-screen">
+        <body className='flex min-h-screen flex-col'>
           <ThemeProvider
             attribute='class'
             defaultTheme='system'
@@ -26,7 +26,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main className="flex-grow">{children}</main>
+            <main className='flex-grow'>{children}</main>
             <Footer />
           </ThemeProvider>
         </body>

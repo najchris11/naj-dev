@@ -23,24 +23,14 @@ export const Navbar = () => {
     <nav className='sticky top-0 z-50 border-b bg-background p-4'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
-          <Image
-            src={`/logos/naj-dev-text.png`}
-            alt='Brand logo'
-            height={40}
-            width={100}
-          />
-        </div>
-
-        {/* Hamburger Menu Icon for Mobile */}
-        <div className='md:hidden flex items-center justify-center w-full'>
-          <Button
-            variant='ghost'
-            onClick={() => {
-              setMenuOpen(!menuOpen);
-            }}
-          >
-            <FaBars size={24} />
-          </Button>
+          <Link href='/'>
+            <Image
+              src={`/logos/naj-dev-text.png`}
+              alt='Brand logo'
+              height={40}
+              width={100}
+            />
+          </Link>
         </div>
 
         {/* Navigation Menu for Desktop */}
@@ -115,6 +105,16 @@ export const Navbar = () => {
               <FaLinkedin size={20} />
             </Link>
           </Button>
+          {/* Hamburger Menu Icon for Mobile */}
+          <Button
+            variant='ghost'
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
+            className='md:hidden'
+          >
+            <FaBars size={20} />
+          </Button>
         </div>
       </div>
 
@@ -129,7 +129,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/' onClick={() => setMenuOpen(false)} className='w-full text-left'>
+                  <Link href='/' onClick={() => setMenuOpen(false)}>
                     Home
                   </Link>
                 </NavigationMenuLink>
@@ -140,7 +140,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/about' onClick={() => setMenuOpen(false)} className='w-full text-left'>
+                  <Link href='/about' onClick={() => setMenuOpen(false)}>
                     About
                   </Link>
                 </NavigationMenuLink>
@@ -151,7 +151,9 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/projects' onClick={() => setMenuOpen(false)} className='w-full text-left'>Projects</Link>
+                  <Link href='/projects' onClick={() => setMenuOpen(false)}>
+                    Projects
+                  </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
@@ -160,7 +162,9 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/resume'onClick={() => setMenuOpen(false)} className='w-full text-left'>Resume</Link>
+                  <Link href='/resume' onClick={() => setMenuOpen(false)}>
+                    Resume
+                  </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
@@ -169,7 +173,7 @@ export const Navbar = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link href='/contact' onClick={() => setMenuOpen(false)} className='w-full text-left'>
+                  <Link href='/contact' onClick={() => setMenuOpen(false)}>
                     Contact
                   </Link>
                 </NavigationMenuLink>

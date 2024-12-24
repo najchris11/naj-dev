@@ -249,9 +249,7 @@
     "image": null,
     "imageDescription": null,
     "youtubeUrl": null,
-    "techStack": [
-      "Java"
-    ],
+    "techStack": ["Java"],
     "achievements": [
       "Developed a functional GUI for movie management",
       "Implemented features for adding, viewing, and organizing movies"

@@ -17,10 +17,15 @@ export default function Hero() {
               developing fun and exciting solutions to new problems.
             </p>
             <div className='mt-6 flex flex-wrap gap-4'>
-              <Button variant='outline' size='lg' className='text-primary'>
-                <Link href='/about'>Learn More About Me</Link>
-              </Button>
-              <Button size='lg'><Link href='/projects'>See Projects</Link></Button>
+              <Link href='/about'>
+                <Button variant='outline' size='lg' className='text-primary'>
+                  Learn More About Me
+                </Button>
+              </Link>
+
+              <Link href='/projects'>
+                <Button size='lg'>See Projects</Button>
+              </Link>
             </div>
           </div>
           {/* Right Column */}

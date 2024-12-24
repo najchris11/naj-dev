@@ -6,7 +6,9 @@ import Link from 'next/link';
 
 const AboutPage = () => {
   return (
-    <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2">      {/* Introduction Section */}
+    <div className='grid grid-cols-1 gap-8 p-8 md:grid-cols-2'>
+      {' '}
+      {/* Introduction Section */}
       <Card className='shadow-md'>
         <CardHeader>
           <CardTitle className='text-3xl font-bold'>
@@ -30,18 +32,18 @@ const AboutPage = () => {
             analysis platform using Last.fm&apos;s API.
           </p>
           <p>
-            I&apos;m currently interning at <strong>JP Morgan Chase</strong>, where
-            I&apos;ve developed a new React frontend for an internal tool used by
-            thousands of legal entities, collaborating with international teams
-            and UX designers. Additionally for{' '}
-            <strong>OSU&apos;s Wexner Medical Center</strong>, I&apos;ve gained valuable
-            insight on accessible and user-friendly designs while I modernized
-            an outdated system and supported organizations to better manage
-            their content through content management systems like Umbraco.
+            I&apos;m currently interning at <strong>JP Morgan Chase</strong>,
+            where I&apos;ve developed a new React frontend for an internal tool
+            used by thousands of legal entities, collaborating with
+            international teams and UX designers. Additionally for{' '}
+            <strong>OSU&apos;s Wexner Medical Center</strong>, I&apos;ve gained
+            valuable insight on accessible and user-friendly designs while I
+            modernized an outdated system and supported organizations to better
+            manage their content through content management systems like
+            Umbraco.
           </p>
         </CardContent>
       </Card>
-
       {/* Hobbies Section */}
       <Card className='shadow-md'>
         <CardHeader>
@@ -53,12 +55,10 @@ const AboutPage = () => {
           <p>You’ll probably find me enjoying some of my favorite hobbies:</p>
           <ul className='ml-6 list-disc space-y-2'>
             <li>
-              Exploring music with Plexamp and creating
-              personalized playlists.
+              Exploring music with Plexamp and creating personalized playlists.
             </li>
             <li>
-              Gaming with my friends or diving into strategy and
-              indie titles.
+              Gaming with my friends or diving into strategy and indie titles.
             </li>
             <li>
               Experimenting with tech setups, like improving my home network
@@ -67,12 +67,12 @@ const AboutPage = () => {
           </ul>
           <p>
             These hobbies inspire me to approach challenges with creativity and
-            provide balance in my life. Whether it&apos;s curating music playlists or
-            tweaking network configurations, I love blending tech with fun.
+            provide balance in my life. Whether it&apos;s curating music
+            playlists or tweaking network configurations, I love blending tech
+            with fun.
           </p>
         </CardContent>
       </Card>
-
       {/* Projects Section */}
       <Card className='shadow-md'>
         <CardHeader>
@@ -83,9 +83,9 @@ const AboutPage = () => {
         <CardContent className='space-y-4'>
           <ul className='ml-6 list-disc space-y-2'>
             <li>
-              <strong>M.C. Jeter&apos;s Portfolio Website</strong>: Built a fast,
-              responsive site with an estimated 25% uplift in sales and social
-              media interactions.
+              <strong>M.C. Jeter&apos;s Portfolio Website</strong>: Built a
+              fast, responsive site with an estimated 25% uplift in sales and
+              social media interactions.
             </li>
             <li>
               <strong>Next.js CMS Project</strong>: Developed a lightweight CMS
@@ -108,7 +108,6 @@ const AboutPage = () => {
           </p>
         </CardContent>
       </Card>
-
       {/* Goals Section */}
       <Card className='shadow-md'>
         <CardHeader>
