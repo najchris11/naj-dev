@@ -80,7 +80,7 @@ const ProjectsPage = () => {
                 <DialogTrigger asChild>
                   <Button variant='outline'>View Project</Button>
                 </DialogTrigger>
-                <DialogContent className='max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg bg-white p-4'>
+                <DialogContent className='max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg p-4'>
                   <DialogHeader>
                     <DialogTitle>{project.title}</DialogTitle>
                     <DialogDescription>{project.description}</DialogDescription>
