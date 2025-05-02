@@ -4,6 +4,7 @@ import { Navbar } from '@/components/Navbar';
 import { StrictMode } from 'react';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Footer } from '@/components/Footer';
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: 'naj-dev',
@@ -26,7 +27,10 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main className='flex-grow'>{children}</main>
+            <main className='flex-grow'>
+              {children}
+              <Analytics />
+              </main>
             <Footer />
           </ThemeProvider>
         </body>

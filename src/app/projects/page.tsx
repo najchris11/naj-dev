@@ -1,5 +1,6 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import styles from './projects.module.css';
 import {
   Card,
   CardContent,
@@ -23,44 +24,14 @@ import {
 } from '@/components/ui/dialog';
 import { Project } from '@/app/types';
 import Link from 'next/link';
-import Masonry from 'react-responsive-masonry';
 
 const ProjectsPage = () => {
-  const [columnsCount, setColumnsCount] = useState(3);
-
-  // Function to determine the number of columns based on screen width
-  const updateColumns = () => {
-    if (window.innerWidth < 640) {
-      setColumnsCount(1);
-    } else if (window.innerWidth < 1024) {
-      setColumnsCount(2);
-    } else {
-      setColumnsCount(3);
-    }
-  };
-  useEffect(() => {
-    const handleResize = debounce(() => updateColumns(), 200); // 200ms debounce delay
-    window.addEventListener('resize', handleResize);
-    // return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const debounce = <T extends (...args: unknown[]) => void>(
-    func: T,
-    wait: number
-  ): ((...args: Parameters<T>) => void) => {
-    let timeout: NodeJS.Timeout;
-    return (...args: Parameters<T>) => {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => func(...args), wait);
-    };
-  };
-
   return (
     <div className='p-6'>
       <h2 className='mb-4 text-2xl font-bold'>My Projects</h2>
-      <Masonry columnsCount={columnsCount}>
+      <div className={styles.container}>
         {projects.map((project: Project, index: number) => (
-          <Card key={index} className='m-4'>
+          <Card key={index}>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
@@ -178,7 +149,7 @@ const ProjectsPage = () => {
             </CardFooter>
           </Card>
         ))}
-      </Masonry>
+      </div>
     </div>
   );
 };
