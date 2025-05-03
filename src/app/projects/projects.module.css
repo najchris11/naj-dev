@@ -1,29 +1,63 @@
+/* Default column-based layout for all browsers */
 .container {
-  display: grid;
+  columns: 1;
   gap: 1rem;
-  grid-template-columns: 1fr;
 }
 
 @media (min-width: 640px) {
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    columns: 2;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    grid-template-columns: repeat(3, 1fr);
+    columns: 3;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    grid-template-columns: repeat(4, 1fr);
+    columns: 4;
   }
 }
 
+.item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Modern browsers with masonry support */
 @supports (grid-template-rows: masonry) {
   .container {
+    columns: unset;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: masonry;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .item {
+    margin-bottom: 0;
+    break-inside: unset;
   }
 }
