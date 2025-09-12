@@ -1,10 +1,10 @@
 export interface Project {
   title: string;
   description: string;
-  image?: string;
-  imageDescription?: string;
-  githubRepo?: string;
-  youtubeUrl?: string;
+  image?: string | null;
+  imageDescription?: string | null;
+  githubRepo?: string | null;
+  youtubeUrl?: string | null;
   techStack?: string[];
   role?: string;
   achievements?: string[];
