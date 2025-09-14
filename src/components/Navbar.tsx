@@ -1,6 +1,4 @@
 'use client';
-
-import { useState } from 'react';
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -15,9 +13,16 @@ import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import React from 'react';
 import { ModeToggle } from './ModeToggle';
 import { Separator } from '@/components/ui/separator';
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetClose,
+  SheetHeader,
+  SheetTitle,
+} from '@/components/ui/sheet';
 
 export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className='sticky top-0 z-50 border-b bg-background p-4'>
@@ -105,83 +110,82 @@ export const Navbar = () => {
               <FaLinkedin size={20} />
             </Link>
           </Button>
-          {/* Hamburger Menu Icon for Mobile */}
-          <Button
-            variant='ghost'
-            onClick={() => {
-              setMenuOpen(!menuOpen);
-            }}
-            className='md:hidden'
-          >
-            <FaBars size={20} />
-          </Button>
+          {/* Mobile Drawer Navigation (Sheet) */}
+          <div className='md:hidden'>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant='ghost' aria-label='Open menu'>
+                  <FaBars size={20} />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side='left' className='w-[85vw] sm:w-[22rem] p-0'>
+                <div className='p-4'>
+                  <SheetHeader className='mb-2'>
+                    <SheetTitle className='flex items-center gap-2'>
+                      <Image
+                        src={'/logos/naj-dev-text.png'}
+                        alt='Brand logo'
+                        height={32}
+                        width={80}
+                      />
+                    </SheetTitle>
+                  </SheetHeader>
+
+                  {/* Optional: Theme toggle inside drawer */}
+                  <div className='mb-3'>
+                    <ModeToggle />
+                  </div>
+
+                  {/* Nav Items - full width grey with small inner margin */}
+                  <nav className='flex flex-col gap-2 px-2'>
+                    <SheetClose asChild>
+                      <Link
+                        href='/'
+                        className='block w-full rounded-md bg-muted px-4 py-2 text-foreground shadow-sm hover:bg-muted/80 transition-colors'
+                      >
+                        Home
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link
+                        href='/about'
+                        className='block w-full rounded-md bg-muted px-4 py-2 text-foreground shadow-sm hover:bg-muted/80 transition-colors'
+                      >
+                        About
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link
+                        href='/projects'
+                        className='block w-full rounded-md bg-muted px-4 py-2 text-foreground shadow-sm hover:bg-muted/80 transition-colors'
+                      >
+                        Projects
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link
+                        href='/resume'
+                        className='block w-full rounded-md bg-muted px-4 py-2 text-foreground shadow-sm hover:bg-muted/80 transition-colors'
+                      >
+                        Resume
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link
+                        href='/contact'
+                        className='block w-full rounded-md bg-muted px-4 py-2 text-foreground shadow-sm hover:bg-muted/80 transition-colors'
+                      >
+                        Contact
+                      </Link>
+                    </SheetClose>
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className='mt-2 rounded-md bg-muted p-4 text-muted-foreground shadow-lg md:hidden'>
-          <NavigationMenu>
-            <NavigationMenuList className='flex flex-col space-y-2'>
-              {/* Mobile Navigation Items */}
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                  asChild
-                >
-                  <Link href='/' onClick={() => setMenuOpen(false)}>
-                    Home
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                  asChild
-                >
-                  <Link href='/about' onClick={() => setMenuOpen(false)}>
-                    About
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                  asChild
-                >
-                  <Link href='/projects' onClick={() => setMenuOpen(false)}>
-                    Projects
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                  asChild
-                >
-                  <Link href='/resume' onClick={() => setMenuOpen(false)}>
-                    Resume
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                  asChild
-                >
-                  <Link href='/contact' onClick={() => setMenuOpen(false)}>
-                    Contact
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
-      )}
     </nav>
   );
 };
