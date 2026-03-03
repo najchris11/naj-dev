@@ -5,6 +5,7 @@ import { StrictMode } from 'react';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Footer } from '@/components/Footer';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: 'naj-dev',
@@ -18,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <StrictMode>
+      <SpeedInsights/>
       <html lang='en' suppressHydrationWarning>
         <body className='flex min-h-screen flex-col'>
           <ThemeProvider
