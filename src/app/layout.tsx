@@ -19,9 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <StrictMode>
-      <SpeedInsights/>
       <html lang='en' suppressHydrationWarning>
         <body className='flex min-h-screen flex-col'>
+      <SpeedInsights/>
           <ThemeProvider
             attribute='class'
             defaultTheme='system'
