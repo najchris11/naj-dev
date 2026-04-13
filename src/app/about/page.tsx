@@ -1,128 +1,174 @@
-'use client';
-
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'Learn more about Christian Coulibaly — software engineering student, JP Morgan Chase intern, and full-stack developer.',
+};
+
+const skills = [
+  { category: 'Languages', items: ['TypeScript', 'JavaScript', 'Python', 'C', 'x86 Assembly', 'C#'] },
+  { category: 'Frontend', items: ['React', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Redux'] },
+  { category: 'Backend & Infra', items: ['Node.js', 'Docker', 'Unraid', 'Umbraco CMS', 'Nextcloud'] },
+  { category: 'Tools', items: ['Git', 'Jest', 'Figma', 'VS Code', 'Linux'] },
+];
 
 const AboutPage = () => {
   return (
-    <div className='grid grid-cols-1 gap-8 p-8 md:grid-cols-2'>
-      {' '}
-      {/* Introduction Section */}
+    <div className='mx-auto max-w-5xl space-y-8 p-8'>
+      {/* Top grid */}
+      <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
+        {/* Introduction */}
+        <Card className='shadow-md'>
+          <CardHeader>
+            <CardTitle className='text-3xl font-bold'>
+              Hi, I&apos;m Christian
+            </CardTitle>
+          </CardHeader>
+          <CardContent className='space-y-4 text-muted-foreground'>
+            <p>
+              I&apos;m a Software Engineering student at{' '}
+              <strong className='text-foreground'>The Ohio State University</strong>,
+              actively involved in{' '}
+              <strong className='text-foreground'>NSBE</strong> and{' '}
+              <strong className='text-foreground'>ColorStack</strong>. I care
+              deeply about building things that are both functional and
+              accessible.
+            </p>
+            <p>
+              I&apos;ve interned at{' '}
+              <strong className='text-foreground'>JP Morgan Chase</strong>, where
+              I built a React frontend for an internal tool used by thousands of
+              legal entities — collaborating with international teams and UX
+              designers. Before that, at{' '}
+              <strong className='text-foreground'>OSU&apos;s Wexner Medical Center</strong>,
+              I modernized content management workflows using Umbraco and focused
+              on accessible design.
+            </p>
+            <p>
+              Outside of work, I run personal projects ranging from AI-powered
+              music tools to self-hosted home servers — anything that blends
+              creativity with engineering.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Hobbies */}
+        <Card className='shadow-md'>
+          <CardHeader>
+            <CardTitle className='text-2xl font-bold'>
+              When I&apos;m Not Coding
+            </CardTitle>
+          </CardHeader>
+          <CardContent className='space-y-4 text-muted-foreground'>
+            <ul className='ml-6 list-disc space-y-2'>
+              <li>
+                Curating playlists and exploring music through{' '}
+                <strong className='text-foreground'>Plexamp</strong> — I built
+                an AI-powered playlist generator to scratch that itch.
+              </li>
+              <li>
+                Gaming with friends or going deep into strategy and indie titles.
+              </li>
+              <li>
+                Tinkering with my home network — OpenWRT, Unifi, and self-hosted
+                services are a hobby in themselves.
+              </li>
+              <li>
+                Building and configuring custom PCs, including a Hackintosh on my
+                XPS 9570.
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Notable projects */}
+        <Card className='shadow-md'>
+          <CardHeader>
+            <CardTitle className='text-2xl font-bold'>
+              Notable Projects
+            </CardTitle>
+          </CardHeader>
+          <CardContent className='space-y-3 text-muted-foreground'>
+            <ul className='ml-6 list-disc space-y-2'>
+              <li>
+                <strong className='text-foreground'>M.C. Jeter&apos;s Portfolio</strong>{' '}
+                — Fast, responsive site with an estimated 25% uplift in sales and
+                social engagement.
+              </li>
+              <li>
+                <strong className='text-foreground'>AI Playlist Generator</strong>{' '}
+                — Python + Last.fm API + ML to surface music patterns and build
+                smarter playlists.
+              </li>
+              <li>
+                <strong className='text-foreground'>JP Morgan Chase Internship</strong>{' '}
+                — Modernized a legal entity tool serving thousands of users,
+                targeting 99% uptime.
+              </li>
+              <li>
+                <strong className='text-foreground'>HDNCHQ Server</strong>{' '}
+                — Self-hosted Plex, Nextcloud, and Vaultwarden with Docker,
+                achieving 95% uptime.
+              </li>
+            </ul>
+            <Button asChild variant='outline' className='mt-2 text-primary'>
+              <Link href='/projects'>View All Projects</Link>
+            </Button>
+          </CardContent>
+        </Card>
+
+        {/* Goals */}
+        <Card className='shadow-md'>
+          <CardHeader>
+            <CardTitle className='text-2xl font-bold'>What&apos;s Next</CardTitle>
+          </CardHeader>
+          <CardContent className='space-y-4 text-muted-foreground'>
+            <p>
+              I&apos;m focused on deepening my expertise in modern full-stack
+              patterns — federated modules, server components, and AI-augmented
+              developer tooling. I&apos;m especially drawn to projects where
+              thoughtful engineering directly improves someone&apos;s experience.
+            </p>
+            <p>
+              Long term, I want to work on products that are genuinely useful
+              and reach people who don&apos;t usually get cutting-edge software.
+            </p>
+            <Button asChild>
+              <Link href='/contact'>Let&apos;s Connect</Link>
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Skills section */}
       <Card className='shadow-md'>
         <CardHeader>
-          <CardTitle className='text-3xl font-bold'>
-            Hi, I&apos;m Christian 👋
-          </CardTitle>
+          <CardTitle className='text-2xl font-bold'>Skills &amp; Tools</CardTitle>
         </CardHeader>
-        <CardContent className='space-y-4'>
-          <p>
-            I&apos;m a passionate software developer with experience working on
-            innovative web projects, from designing accessible websites to
-            building modern applications. I&apos;m currently studying at{' '}
-            <strong>The Ohio State University</strong>, where I&apos;m actively
-            involved in our chapter of{' '}
-            <strong>National Society of Black Engineers (NSBE)</strong> and{' '}
-            <strong>ColorStack</strong>.
-          </p>
-          <p>
-            My recent work includes a <strong>Next.js CMS project</strong>{' '}
-            designed to simplify content management, a portfolio site for{' '}
-            <strong>M.C. Jeter</strong>, and a music recommendation and pattern
-            analysis platform using Last.fm&apos;s API.
-          </p>
-          <p>
-            I&apos;m currently interning at <strong>JP Morgan Chase</strong>,
-            where I&apos;ve developed a new React frontend for an internal tool
-            used by thousands of legal entities, collaborating with
-            international teams and UX designers. Additionally for{' '}
-            <strong>OSU&apos;s Wexner Medical Center</strong>, I&apos;ve gained
-            valuable insight on accessible and user-friendly designs while I
-            modernized an outdated system and supported organizations to better
-            manage their content through content management systems like
-            Umbraco.
-          </p>
-        </CardContent>
-      </Card>
-      {/* Hobbies Section */}
-      <Card className='shadow-md'>
-        <CardHeader>
-          <CardTitle className='text-2xl font-bold'>
-            When I’m Not Coding...
-          </CardTitle>
-        </CardHeader>
-        <CardContent className='space-y-4'>
-          <p>You’ll probably find me enjoying some of my favorite hobbies:</p>
-          <ul className='ml-6 list-disc space-y-2'>
-            <li>
-              Exploring music with Plexamp and creating personalized playlists.
-            </li>
-            <li>
-              Gaming with my friends or diving into strategy and indie titles.
-            </li>
-            <li>
-              Experimenting with tech setups, like improving my home network
-              with OpenWRT and Unifi.
-            </li>
-          </ul>
-          <p>
-            These hobbies inspire me to approach challenges with creativity and
-            provide balance in my life. Whether it&apos;s curating music
-            playlists or tweaking network configurations, I love blending tech
-            with fun.
-          </p>
-        </CardContent>
-      </Card>
-      {/* Projects Section */}
-      <Card className='shadow-md'>
-        <CardHeader>
-          <CardTitle className='text-2xl font-bold'>
-            Some Projects I&apos;ve Worked On
-          </CardTitle>
-        </CardHeader>
-        <CardContent className='space-y-4'>
-          <ul className='ml-6 list-disc space-y-2'>
-            <li>
-              <strong>M.C. Jeter&apos;s Portfolio Website</strong>: Built a
-              fast, responsive site with an estimated 25% uplift in sales and
-              social media interactions.
-            </li>
-            <li>
-              <strong>Next.js CMS Project</strong>: Developed a lightweight CMS
-              for handling aesthetics and adding dynamic content effortlessly.
-            </li>
-            <li>
-              <strong>JP Morgan Chase Internship</strong>: Modernized an
-              internal legal entity tool, increasing maintainability and
-              aligning with 99% uptime goals.
-            </li>
-            <li>
-              <strong>HDNCHQ Server Management</strong>: Improved server uptime
-              to 95% with optimized Docker configurations for tools like Plex,
-              Nextcloud, and Vaultwarden.
-            </li>
-          </ul>
-          <p>
-            Each project reflects my dedication to building solutions that are
-            practical, impactful, and user-focused.
-          </p>
-        </CardContent>
-      </Card>
-      {/* Goals Section */}
-      <Card className='shadow-md'>
-        <CardHeader>
-          <CardTitle className='text-2xl font-bold'>What’s Next?</CardTitle>
-        </CardHeader>
-        <CardContent className='space-y-4'>
-          <p>
-            My current focus is on advancing my knowledge of federated modules,
-            modern frameworks like Next.js, and exploring AI-powered solutions.
-            I’m especially interested in enhancing user experiences and building
-            scalable systems.
-          </p>
-          <Button asChild>
-            <Link href='/contact'>Let’s Connect</Link>
-          </Button>
+        <CardContent>
+          <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4'>
+            {skills.map(({ category, items }) => (
+              <div key={category}>
+                <p className='mb-2 text-sm font-semibold uppercase tracking-wider text-primary'>
+                  {category}
+                </p>
+                <div className='flex flex-wrap gap-1.5'>
+                  {items.map((item) => (
+                    <span
+                      key={item}
+                      className='rounded-md border border-border bg-muted px-2 py-0.5 text-xs text-muted-foreground'
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </CardContent>
       </Card>
     </div>

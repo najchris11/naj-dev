@@ -1,4 +1,4 @@
-/* Pinterest-like Masonry Layout */
+/* CSS column-based masonry layout — works in all browsers, no JS needed */
 .container {
   column-count: 1;
   column-gap: 1.5rem;
@@ -34,10 +34,9 @@
   margin-bottom: 1.5rem;
   display: inline-block;
   width: 100%;
-  position: relative;
 }
 
-/* Modern browsers with native masonry support (when available) */
+/* Native masonry when browsers support it */
 @supports (grid-template-rows: masonry) {
   .container {
     display: grid;
@@ -49,52 +48,23 @@
   }
 
   @media (min-width: 640px) {
-    .container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    .container { grid-template-columns: repeat(2, 1fr); }
   }
 
   @media (min-width: 768px) {
-    .container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .container { grid-template-columns: repeat(3, 1fr); }
   }
 
   @media (min-width: 1024px) {
-    .container {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    .container { grid-template-columns: repeat(4, 1fr); }
   }
 
   @media (min-width: 1280px) {
-    .container {
-      grid-template-columns: repeat(5, 1fr);
-    }
+    .container { grid-template-columns: repeat(5, 1fr); }
   }
 
   .item {
     break-inside: unset;
     margin-bottom: 0;
   }
-}
-
-/* Smooth animations for card interactions */
-.item:hover {
-  transform: translateY(-2px);
-}
-
-/* Loading skeleton animation */
-@keyframes shimmer {
-  0% {
-    background-position: -200px 0;
-  }
-  100% {
-    background-position: calc(200px + 100%) 0;
-  }
-}
-
-.skeleton {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-  background-size: 200px 100%;
-  animation: shimmer 1.5s infinite;
 }

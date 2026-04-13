@@ -105,7 +105,7 @@ export const Navbar = () => {
             <Link
               href='https://linkedin.com/in/christiancoulibaly'
               target='_blank'
-              rel='noopener noreferrrer'
+              rel='noopener noreferrer'
             >
               <FaLinkedin size={20} />
             </Link>
