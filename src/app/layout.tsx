@@ -13,21 +13,15 @@ export const metadata: Metadata = {
     template: '%s | naj-dev',
   },
   description:
-    'Christian Coulibaly — Software Engineering student at Ohio State University. Full-stack developer passionate about accessible design, modern web apps, and creative tech solutions.',
+    'Christian Coulibaly — Mobile Software Engineer Intern at JPMorgan Chase. Two-time JPMC hackathon winner. Builds for Android, the web, and beyond.',
   openGraph: {
     title: 'Christian Coulibaly | naj-dev',
     description:
-      'Software Engineering student at OSU. Full-stack developer with experience at JP Morgan Chase, building modern web apps with React, Next.js, and TypeScript.',
+      'Mobile Software Engineer Intern at JPMorgan Chase. Two-time JPMC hackathon winner. Builds for Android, the web, and beyond.',
     url: 'https://naj.dev',
     siteName: 'naj-dev',
     locale: 'en_US',
     type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Christian Coulibaly | naj-dev',
-    description:
-      'Software Engineering student at OSU. Full-stack developer with experience at JP Morgan Chase.',
   },
   robots: {
     index: true,

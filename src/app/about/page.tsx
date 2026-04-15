@@ -6,14 +6,30 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Learn more about Christian Coulibaly — software engineering student, JP Morgan Chase intern, and full-stack developer.',
+    'Christian Coulibaly — graduating from Ohio State in May 2026, incoming full-time Mobile Software Engineer at JPMorgan Chase. Full-stack developer, two-time JPMC hackathon winner, and NSBE Recording Secretary.',
 };
 
 const skills = [
-  { category: 'Languages', items: ['TypeScript', 'JavaScript', 'Python', 'C', 'x86 Assembly', 'C#'] },
-  { category: 'Frontend', items: ['React', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Redux'] },
-  { category: 'Backend & Infra', items: ['Node.js', 'Docker', 'Unraid', 'Umbraco CMS', 'Nextcloud'] },
-  { category: 'Tools', items: ['Git', 'Jest', 'Figma', 'VS Code', 'Linux'] },
+  {
+    category: 'Languages',
+    items: ['TypeScript', 'JavaScript', 'Kotlin', 'Swift', 'Python', 'C', 'x86 Assembly', 'C#', 'Java', 'PHP'],
+  },
+  {
+    category: 'Mobile',
+    items: ['Jetpack Compose', 'MVVM', 'Android', 'SwiftUI', 'Flutter', 'Xamarin.Forms'],
+  },
+  {
+    category: 'Web & Backend',
+    items: ['React', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Redux', 'Node.js', 'tRPC', 'Prisma', 'Express.js'],
+  },
+  {
+    category: 'Infra & Tools',
+    items: ['AWS', 'Docker', 'Unraid', 'Git', 'Jest', 'Webpack', 'Linux', 'Cloudflare', 'Umbraco CMS'],
+  },
+  {
+    category: 'Certifications',
+    items: ['AWS Cloud Practitioner', 'CodePath Advanced Technical Interview Prep', 'CodePath Intro to iOS Dev', 'AWS Certified Developer (Expected May 2026)'],
+  },
 ];
 
 const AboutPage = () => {
@@ -30,28 +46,27 @@ const AboutPage = () => {
           </CardHeader>
           <CardContent className='space-y-4 text-muted-foreground'>
             <p>
-              I&apos;m a Software Engineering student at{' '}
+              I&apos;m a Computer Science &amp; Engineering student at{' '}
               <strong className='text-foreground'>The Ohio State University</strong>,
-              actively involved in{' '}
-              <strong className='text-foreground'>NSBE</strong> and{' '}
-              <strong className='text-foreground'>ColorStack</strong>. I care
-              deeply about building things that are both functional and
-              accessible.
+              graduating May 2026 with a minor in French. I&apos;m the Recording Secretary of
+              OSU&apos;s <strong className='text-foreground'>NSBE</strong> chapter 
+              and an active member of{' '}
+              <strong className='text-foreground'>ColorStack</strong>.
             </p>
             <p>
-              I&apos;ve interned at{' '}
-              <strong className='text-foreground'>JP Morgan Chase</strong>, where
-              I built a React frontend for an internal tool used by thousands of
-              legal entities — collaborating with international teams and UX
-              designers. Before that, at{' '}
+              I&apos;m currently a <strong className='text-foreground'>Mobile Development Intern at JPMorgan Chase</strong>,
+              working on the Chase Android app used by{' '}
+              <strong className='text-foreground'>70M+ customers</strong> using Jetpack Compose and MVVM.
+              After graduation, I&apos;ll be joining Chase full-time on a mobile team.
+            </p>
+            <p>
+              Previously I interned on Chase&apos;s web team, modernizing an internal
+              financial tool for 1000+ global legal entities, and at{' '}
               <strong className='text-foreground'>OSU&apos;s Wexner Medical Center</strong>,
-              I modernized content management workflows using Umbraco and focused
-              on accessible design.
+              where I achieved 100% accessibility compliance across the Comprehensive Cancer Center&apos;s site.
             </p>
-            <p>
-              Outside of work, I run personal projects ranging from AI-powered
-              music tools to self-hosted home servers — anything that blends
-              creativity with engineering.
+            <p className='text-xs'>
+              🇫🇷 Fluent in French (Native / Bilingual proficiency)
             </p>
           </CardContent>
         </Card>
@@ -95,24 +110,20 @@ const AboutPage = () => {
           <CardContent className='space-y-3 text-muted-foreground'>
             <ul className='ml-6 list-disc space-y-2'>
               <li>
+                <strong className='text-foreground'>JPMC Global Hackathon 2025</strong>{' '}
+                — 1st place out of 64 Columbus teams building an internal mobility assistant with NLP + OpenAI.
+              </li>
+              <li>
+                <strong className='text-foreground'>CTRL-R (Code for Good)</strong>{' '}
+                — Challenge winner for Pyramid CDC, a digital literacy platform built in 24 hours.
+              </li>
+              <li>
                 <strong className='text-foreground'>M.C. Jeter&apos;s Portfolio</strong>{' '}
-                — Fast, responsive site with an estimated 25% uplift in sales and
-                social engagement.
-              </li>
-              <li>
-                <strong className='text-foreground'>AI Playlist Generator</strong>{' '}
-                — Python + Last.fm API + ML to surface music patterns and build
-                smarter playlists.
-              </li>
-              <li>
-                <strong className='text-foreground'>JP Morgan Chase Internship</strong>{' '}
-                — Modernized a legal entity tool serving thousands of users,
-                targeting 99% uptime.
+                — Delivered an estimated 25% uplift in sales and social engagement.
               </li>
               <li>
                 <strong className='text-foreground'>HDNCHQ Server</strong>{' '}
-                — Self-hosted Plex, Nextcloud, and Vaultwarden with Docker,
-                achieving 95% uptime.
+                — Self-hosted Plex, Nextcloud, and Vaultwarden with Docker, improving uptime from 40% to 95%.
               </li>
             </ul>
             <Button asChild variant='outline' className='mt-2 text-primary'>
@@ -128,14 +139,17 @@ const AboutPage = () => {
           </CardHeader>
           <CardContent className='space-y-4 text-muted-foreground'>
             <p>
-              I&apos;m focused on deepening my expertise in modern full-stack
-              patterns — federated modules, server components, and AI-augmented
-              developer tooling. I&apos;m especially drawn to projects where
-              thoughtful engineering directly improves someone&apos;s experience.
+              After graduating from OSU in May 2026, I&apos;ll be joining
+              JPMorgan Chase full-time as a{' '}
+              <strong className='text-foreground'>Software Engineer on a mobile team</strong>.
+              I&apos;m excited to go deeper on Android development with Jetpack
+              Compose and to keep pushing on the kinds of products that reach
+              people at scale.
             </p>
             <p>
-              Long term, I want to work on products that are genuinely useful
-              and reach people who don&apos;t usually get cutting-edge software.
+              On the side, I&apos;m continuing to build out personal projects —
+              AI tooling, self-hosted infrastructure, and wherever curiosity takes
+              me next.
             </p>
             <Button asChild>
               <Link href='/contact'>Let&apos;s Connect</Link>
@@ -150,7 +164,7 @@ const AboutPage = () => {
           <CardTitle className='text-2xl font-bold'>Skills &amp; Tools</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4'>
+          <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
             {skills.map(({ category, items }) => (
               <div key={category}>
                 <p className='mb-2 text-sm font-semibold uppercase tracking-wider text-primary'>
