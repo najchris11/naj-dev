@@ -8,20 +8,36 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://naj-dev.com'),
   title: {
     default: 'naj-dev | Christian Coulibaly',
     template: '%s | naj-dev',
   },
   description:
-    'Christian Coulibaly — Mobile Software Engineer Intern at JPMorgan Chase. Two-time JPMC hackathon winner. Builds for Android, the web, and beyond.',
+    'Christian Coulibaly — Mobile Software Engineer at JPMorgan Chase.',
   openGraph: {
     title: 'Christian Coulibaly | naj-dev',
     description:
-      'Mobile Software Engineer Intern at JPMorgan Chase. Two-time JPMC hackathon winner. Builds for Android, the web, and beyond.',
-    url: 'https://naj.dev',
+      'Mobile Software Engineer at JPMorgan Chase.',
+    url: 'https://naj-dev.com',
     siteName: 'naj-dev',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 1200,
+        alt: 'Portrait of Christian Coulibaly',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Christian Coulibaly | naj-dev',
+    description:
+      'Mobile Software Engineer at JPMorgan Chase.',
+    images: ['/images/og-image.jpg'],
   },
   robots: {
     index: true,
