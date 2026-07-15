@@ -4,12 +4,45 @@ import { Navbar } from '@/components/Navbar';
 import { StrictMode } from 'react';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Footer } from '@/components/Footer';
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  title: 'naj-dev',
-  description: 'Portfolio and website for developer Christian Coulibaly',
+  metadataBase: new URL('https://naj-dev.com'),
+  title: {
+    default: 'naj-dev | Christian Coulibaly',
+    template: '%s | naj-dev',
+  },
+  description:
+    'Christian Coulibaly — Mobile Software Engineer at JPMorgan Chase.',
+  openGraph: {
+    title: 'Christian Coulibaly | naj-dev',
+    description:
+      'Mobile Software Engineer at JPMorgan Chase.',
+    url: 'https://naj-dev.com',
+    siteName: 'naj-dev',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 1200,
+        alt: 'Portrait of Christian Coulibaly',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Christian Coulibaly | naj-dev',
+    description:
+      'Mobile Software Engineer at JPMorgan Chase.',
+    images: ['/images/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +54,6 @@ export default function RootLayout({
     <StrictMode>
       <html lang='en' suppressHydrationWarning>
         <body className='flex min-h-screen flex-col'>
-      <SpeedInsights/>
           <ThemeProvider
             attribute='class'
             defaultTheme='system'
@@ -29,12 +61,11 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main className='flex-grow'>
-              {children}
-              <Analytics />
-              </main>
+            <main className='flex-grow'>{children}</main>
             <Footer />
           </ThemeProvider>
+          <Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </StrictMode>
