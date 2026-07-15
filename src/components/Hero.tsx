@@ -19,14 +19,14 @@ export default function Hero() {
           {/* Left Column */}
           <div>
             <span className='mb-4 inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary'>
-              Incoming Android Engineer @ Chase
+              Android Software Engineer @ Chase
             </span>
             <h1 className='text-4xl font-extrabold tracking-tight lg:text-5xl'>
               Christian Coulibaly
             </h1>
             <p className='mt-4 text-xl text-muted-foreground'>
-              Mobile engineer in the making. I build things for Android, the
-              web, and whatever else in between — from 70M-user apps to
+              I build things for Android, the
+              web, and whatever else in between. From large commercial apps to
               side projects born from genuine curiosity.
             </p>
             <div className='mt-6 flex flex-wrap gap-4'>

@@ -1,41 +1,60 @@
 [
   {
+    "title": "SnapVault",
+    "description": "A cross-platform app that turns a raw Snapchat data export into an organized, deduplicated media library. Rebuilds Snapchat's photo/video overlays into single files.",
+    "image": null,
+    "imageDescription": null,
+    "githubRepo": "https://github.com/najchris11/snapchat-memories-downloader",
+    "youtubeUrl": null,
+    "techStack": [
+      "Kotlin Multiplatform",
+      "Compose Desktop",
+      "Ktor",
+      "Okio",
+      "FFmpeg",
+      "ExifTool"
+    ],
+    "achievements": [
+      "Built a zip-import pipeline that parses Snapchat's multi-file export format, correlates JSON/HTML metadata, and reconstructs GPS and timestamp data per file",
+      "Implemented hardware-accelerated video encoding, falling back to software encoding when unavailable",
+      "Set up CI that builds native macOS, Windows, and Linux installers on every push to main"
+    ],
+    "status": "In Progress",
+    "date": "December 2025 - Present"
+  },
+  {
     "title": "Naj-Dev Portfolio Website",
-    "description": "A modern portfolio website showcasing my projects, skills, and experience, built using Next.js and other cutting-edge technologies.",
+    "description": "A modern portfolio website showcasing my projects, skills, and experience, built using Next.js and other technologies.",
     "techStack": ["Next.js", "TypeScript", "ShadCN UI", "Vercel"],
     "achievements": [
       "Designed a visually appealing and responsive user interface.",
-      "Implemented a modular structure for scalability and reusability.",
       "Showcased a dynamic project list with support for embedded videos and images."
     ],
     "githubRepo": "https://github.com/najchris11/naj-dev",
-    "role": "Fullstack Developer",
-    "status": "In Progress",
+    "status": "Ongoing",
     "date": "2024 - Present",
     "additionalNotes": "Future plans include integrating the T3 stack for backend support, user interactions, and advanced animations leveraging server-side rendering for enhanced performance."
   },
   {
     "title": "JPMorgan Chase — Mobile Development Intern",
-    "description": "Working on the Chase Android app — used by 70M+ customers — as part of the Software Engineering Program's mobile track, self-teaching Jetpack Compose and MVVM to contribute from day one.",
+    "description": "Working on the Chase Android app — used by 70M+ customers — self-teaching Jetpack Compose and MVVM patterns.",
     "techStack": ["Kotlin", "Jetpack Compose", "MVVM", "Android", "Java"],
     "achievements": [
       "Self-taught Jetpack Compose and MVVM patterns to accelerate onboarding and contribute to the Chase Android app used by 70M+ users.",
-      "Collaborated with developers to refactor existing merchandising tile logic and adapt Android View templates for a new tile design, improving customer interaction by 15%.",
-      "Led the transition of the team's package to Jetpack Compose by rewriting merchandising tiles and their bindings, pioneering Compose adoption and enabling more flexible layouts for future features."
+      "Worked on features as well as defects on their scrum team, gaining experience in Android development, code reviews, and agile practices.",
+      "Created a playground application to help onboard new developers to Chase's Android app codebase, demonstrating best practices and common patterns."
     ],
     "githubRepo": null,
-    "role": "Mobile Developer",
-    "status": "In Progress",
-    "date": "June 2025 - Present",
-    "additionalNotes": "Continuing full-time on this team after graduating from OSU in May 2026."
+    "status": "Completed",
+    "date": "June 2025 - May 2026"
   },
   {
     "title": "JPMC Global Hackathon — Internal Mobility Assistant (1st Place, Columbus)",
-    "description": "Built an internal mobility assistant to help JPMorgan Chase employees discover and transition into better-aligned roles, winning 1st place out of 64 teams in the Columbus division of JPMC's 10th Annual Global Hackathon.",
+    "description": "Built an internal mobility assistant to help JPMorgan Chase employees discover and transition into better-aligned roles.",
     "techStack": ["React", "Python", "OpenAI API", "NLP"],
     "achievements": [
       "Won 1st place out of 64 teams at the Columbus division of JPMorgan Chase's 10th Annual Global Hackathon.",
-      "Built a backend system using NLP techniques and Python's Counter to compare user resumes against job descriptions, scoring overlap to surface best-fit internal roles — designed for future LLM integration.",
+      "Built a backend system using NLP techniques to compare user resumes against job descriptions, scoring overlap to surface best-fit internal roles.",
       "Collaborated across frontend, backend, and agentic AI teams to deliver a chatbot-driven platform with role-matching logic and automated outreach workflows."
     ],
     "githubRepo": null,
@@ -46,26 +65,23 @@
   },
   {
     "title": "JPMorgan Chase — Full Stack Web Development Intern",
-    "description": "Modernized an internal financial tool's UI for 1000+ global legal entities, transitioning from a legacy JSP application to a responsive React microfrontend — reducing task time by up to 50% and targeting 99% uptime.",
-    "techStack": ["React", "Redux", "Jest", "Webpack", "TypeScript", "Microfrontend"],
+    "description": "Modernized an internal financial tool's UI for 1000+ global legal entities, transitioning from a legacy JSP application to a responsive React app.",
+    "techStack": ["React", "Redux", "Jest", "Webpack", "TypeScript"],
     "achievements": [
       "Pioneered the modernization of an internal financial tool's UI, transitioning from an outdated JSP application to a responsive React frontend designed to reduce task time by up to 50% for 1000+ global legal entities.",
       "Worked independently on the UI/UX redesign in Columbus while coordinating closely with an international team of developers, designers, and managers using Jira.",
       "Modularized the new frontend using a microfrontend architecture and existing APIs, enabling partial integration with the legacy system and comprehensive testing with Jest and Webpack."
     ],
     "githubRepo": null,
-    "role": "Frontend Developer",
     "status": "Completed",
     "date": "June 2024 - May 2025",
     "additionalNotes": "Strong focus on independent development, cross-timezone communication, and unit testing discipline."
   },
   {
     "title": "Breakout Simulation Labs",
-    "description": "A multi-part lab series for creating and enhancing a Breakout game simulation, culminating in advanced skills like register management, assembly programming, and low-level memory operations.",
+    "description": "A multi-part lab series for creating and enhancing a Breakout game simulation.",
     "techStack": [
       "C",
-      "Assembly Language (x86)",
-      "Linked Lists",
       "Dynamic Memory",
       "Makefile",
       "Graphics Library",
@@ -76,30 +92,24 @@
       "Extended functionality in Lab 3 to support multiple objects, scoring, and linked list integration.",
       "Developed custom linked list functions in Lab 4, including `insert`, `deleteSome`, `iterate`, and `sort`.",
       "Implemented advanced memory management techniques to handle allocation failures gracefully.",
-      "Enhanced game mechanics with paddle deflection, bonus modes, and optimized output.",
-      "Gained expertise in assembly programming with register allocation, stack alignment, and efficient array operations from Lab 5.",
-      "Developed assembly functions to analyze audio data, track min/max values, and convert PCM to decibels."
+      "Enhanced game mechanics with paddle deflection, bonus modes, and optimized output."
     ],
     "githubRepo": null,
-    "role": "Software Developer",
     "status": "Completed",
-    "date": "Fall 2024",
-    "additionalNotes": "Developed progressively across Labs 2-5, introducing increasing complexity and refining both high-level and low-level programming skills."
+    "date": "Fall 2024"
   },
   {
     "title": "Jump The Broom Books Website",
     "description": "A responsive website for Jump The Broom Books, showcasing its offerings and providing an online presence.",
     "techStack": ["Next.js", "React", "Material UI", "Vercel"],
     "achievements": [
-      "Created a user-friendly website to enhance visibility and engagement.",
+      "Created a user-friendly website to enhance visibility and engagement with their book catalog.",
       "Ensured responsive design across devices.",
-      "Delivered a scalable solution using modern web technologies."
+      "Reached tens of thousands of free ebook downloads on the Amazon Kindle store."
     ],
     "githubRepo": "https://github.com/najchris11/jtbbooks",
-    "role": "Frontend Developer",
-    "status": "In Progress",
-    "date": "2024 - Present",
-    "additionalNotes": "This project highlights the ability to craft modern, responsive websites for specialized use cases.",
+    "status": "Completed",
+    "date": "2024 - 2025",
     "image": "jtbbooks.jpeg",
     "imageDescription": "Jump The Broom Books Website Screenshot"
   },
@@ -113,7 +123,6 @@
       "Planned for dynamic content management via a headless CMS setup."
     ],
     "githubRepo": null,
-    "role": "Fullstack Developer",
     "status": "In Progress",
     "date": "2024 - Present",
     "additionalNotes": "This project will serve as the foundation for several portfolio pieces, including a new iteration of M.C. Jeter's site."
@@ -121,23 +130,15 @@
   {
     "title": "AI-Powered Playlist Generator",
     "description": "A machine learning project designed to analyze Last.fm data and generate 20-song playlists based on user preferences and song similarities.",
-    "techStack": [
-      "Python",
-      "Last.fm API",
-      "OpenAI APIs",
-      "Pandas",
-      "Machine Learning"
-    ],
+    "techStack": ["Python", "Last.fm API"],
     "achievements": [
       "Developed a pipeline to fetch and process user listening data from the Last.fm API.",
-      "Planned for AI-based song similarity analysis using OpenAI models.",
       "Designed an intuitive interface for generating and exporting playlists."
     ],
     "githubRepo": null,
-    "role": "Data Scientist & Developer",
-    "status": "In Progress",
-    "date": "2024 - Present",
-    "additionalNotes": "This project combines music analysis with machine learning to provide personalized playlist recommendations."
+    "status": "Completed",
+    "date": "2024 - 2025",
+    "additionalNotes": "This project did eventually pivot and turn into the beetjuice project."
   },
   {
     "title": "ECE 2360 Final Project",
@@ -156,8 +157,8 @@
     "imageDescription": "Picture of breadboard powered down."
   },
   {
-    "title": "CTRL-R — JPMC Code for Good (Challenge Winner, Pyramid CDC)",
-    "description": "A digital literacy platform built in 24 hours for Pyramid CDC, a Columbus non-profit improving digital access in underserved Ohio communities. Won the Pyramid CDC challenge at the JPMorgan Chase Code for Good Hackathon.",
+    "title": "JPMC Code for Good - CTRL-R (1st Place, Pyramid CDC)",
+    "description": "A digital literacy platform built in 24 hours for Pyramid CDC, a Columbus non-profit improving digital access in underserved Ohio communities.",
     "techStack": ["React", "Node.js", "Firebase", "Tailwind CSS", "AWS EC2"],
     "achievements": [
       "Awarded challenge winner for Pyramid CDC at the JPMorgan Chase Code for Good Hackathon, competing to improve digital literacy for 1000+ Ohio residents.",
@@ -168,8 +169,7 @@
     "githubRepo": null,
     "role": "Fullstack Developer",
     "status": "Completed",
-    "date": "Nov 2023",
-    "additionalNotes": "Built during an intense 24-hour hackathon. Pyramid CDC focuses on closing the digital divide in underserved Ohio communities."
+    "date": "Nov 2023"
   },
   {
     "title": "M.C. Jeter's Website",
@@ -180,10 +180,8 @@
       "Estimated 25% uplift in sales and social media interactions"
     ],
     "githubRepo": "https://github.com/najchris11/mcjeterbooks",
-    "role": "Frontend Developer",
     "status": "Completed",
     "date": "2023",
-    "additionalNotes": "Early experience with static site generation and user experience improvement. New iteration planned using the lightweight CMS.",
     "image": "mcjeterbooks.jpeg",
     "imageDescription": "M.C. Jeter's Website Screenshot"
   },
@@ -193,10 +191,9 @@
     "techStack": ["Unraid", "Docker", "SWAG", "Cloudflare Tunnels", "OpenWRT"],
     "achievements": [
       "Improved server uptime from ~40% to 95%",
-      "Sextupled server performance with better resource allocation"
+      "Sextupled server performance with better resource allocation and hardware upgrades"
     ],
     "githubRepo": null,
-    "role": "System Administrator",
     "status": "Ongoing",
     "date": "2019 - Present",
     "additionalNotes": "Showcased advanced configuration skills and self-hosting expertise.",
@@ -221,10 +218,8 @@
       "Configured operating systems, software, and drivers for smooth user experiences."
     ],
     "githubRepo": null,
-    "role": "System Integrator",
     "status": "Ongoing",
     "date": "2021 - Present",
-    "additionalNotes": "This project showcases advanced expertise in building custom PCs for various applications, including gaming, media servers, and productivity setups.",
     "image": "najspcs.jpeg",
     "imageDescription": "One of Naj's custom PC builds."
   },
@@ -242,7 +237,6 @@
       "Facilitated a seamless macOS experience on non-Apple hardware."
     ],
     "githubRepo": "https://github.com/najchris11/XPS9570-Opencore-IntelWifi",
-    "role": "System Integrator",
     "status": "Completed",
     "date": "2021",
     "additionalNotes": "No longer updated; users are directed to alternative repositories for continued support."
@@ -256,10 +250,8 @@
       "Gained experience in database integration for data persistence"
     ],
     "githubRepo": "https://github.com/najchris11/Mobile-App-Dev-Projects",
-    "role": "Mobile App Developer",
     "status": "Completed",
-    "date": "Summer 2021",
-    "additionalNotes": "Demonstrated proficiency in mobile UI design, event handling, and data management."
+    "date": "Summer 2021"
   },
   {
     "title": "Web Application Development Final Project",
@@ -270,7 +262,6 @@
       "Dynamic content fetching from external APIs"
     ],
     "githubRepo": "https://github.com/najchris11/Web-App-Development-Final",
-    "role": "Fullstack Developer",
     "status": "Completed",
     "date": "Spring 2021",
     "additionalNotes": "Certain features may be limited due to removed API keys. Application is no longer deployed."
@@ -288,7 +279,6 @@
     ],
     "date": "2021",
     "status": "Completed",
-    "additionalNotes": "This project showcases proficiency in Java and GUI application development.",
     "githubRepo": "https://github.com/hanhanhan0831/Movie-Center"
   },
   {
@@ -301,10 +291,8 @@
       "Gained experience in desktop application development with Java."
     ],
     "githubRepo": "https://github.com/najchris11/Checklist",
-    "role": "Developer",
     "status": "Completed",
     "date": "2019",
-    "additionalNotes": "An exercise in building desktop applications using Java Swing, focusing on creating a functional and user-friendly checklist tool.",
     "youtubeUrl": "https://www.youtube.com/watch?v=N78VHvh5U-0&t=2385s"
   },
   {
@@ -317,9 +305,7 @@
       "Gained experience in implementing algorithms and designing reusable code."
     ],
     "githubRepo": "https://github.com/najchris11/java-projects",
-    "role": "Software Developer",
     "status": "Completed",
-    "date": "2019",
-    "additionalNotes": "Reflects foundational skills in Java programming and the ability to tackle diverse challenges."
+    "date": "2019"
   }
 ]

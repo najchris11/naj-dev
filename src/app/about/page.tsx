@@ -6,29 +6,39 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Christian Coulibaly — graduating from Ohio State in May 2026, incoming full-time Mobile Software Engineer at JPMorgan Chase. Full-stack developer, two-time JPMC hackathon winner, and NSBE Recording Secretary.',
+    'Christian Coulibaly - Mobile Software Engineer at JPMorgan Chase.',
 };
 
 const skills = [
   {
     category: 'Languages',
-    items: ['TypeScript', 'JavaScript', 'Kotlin', 'Swift', 'Python', 'C', 'x86 Assembly', 'C#', 'Java', 'PHP'],
+    items: ['TypeScript', 'Kotlin', 'Swift', 'Python', 'C', 'Java'],
   },
   {
     category: 'Mobile',
-    items: ['Jetpack Compose', 'MVVM', 'Android', 'SwiftUI', 'Flutter', 'Xamarin.Forms'],
+    items: [
+      'Jetpack Compose',
+      'MVVM',
+      'Android',
+      'SwiftUI',
+      'Kotlin Multiplatform',
+    ],
   },
   {
     category: 'Web & Backend',
-    items: ['React', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Redux', 'Node.js', 'tRPC', 'Prisma', 'Express.js'],
+    items: ['React', 'Next.js', 'Tailwind CSS', 'shadcn/ui'],
   },
   {
     category: 'Infra & Tools',
-    items: ['AWS', 'Docker', 'Unraid', 'Git', 'Jest', 'Webpack', 'Linux', 'Cloudflare', 'Umbraco CMS'],
+    items: ['AWS', 'Docker', 'Unraid', 'Git', 'Webpack', 'Linux', 'Cloudflare'],
   },
   {
     category: 'Certifications',
-    items: ['AWS Cloud Practitioner', 'CodePath Advanced Technical Interview Prep', 'CodePath Intro to iOS Dev', 'AWS Certified Developer (Expected May 2026)'],
+    items: [
+      'AWS Cloud Practitioner',
+      'CodePath Advanced Technical Interview Prep',
+      'CodePath Intro to iOS Dev',
+    ],
   },
 ];
 
@@ -46,24 +56,28 @@ const AboutPage = () => {
           </CardHeader>
           <CardContent className='space-y-4 text-muted-foreground'>
             <p>
-              I&apos;m a Computer Science &amp; Engineering student at{' '}
-              <strong className='text-foreground'>The Ohio State University</strong>,
-              graduating May 2026 with a minor in French. I&apos;m the Recording Secretary of
-              OSU&apos;s <strong className='text-foreground'>NSBE</strong> chapter 
-              and an active member of{' '}
+              I&apos;m a Computer Science &amp; Engineering graduate from{' '}
+              <strong className='text-foreground'>
+                The Ohio State University
+              </strong>{' '}
+              where I served as the Recording Secretary of OSU&apos;s{' '}
+              <strong className='text-foreground'>NSBE</strong> chapter and an
+              active member of{' '}
               <strong className='text-foreground'>ColorStack</strong>.
             </p>
             <p>
-              I&apos;m currently a <strong className='text-foreground'>Mobile Development Intern at JPMorgan Chase</strong>,
-              working on the Chase Android app used by{' '}
-              <strong className='text-foreground'>70M+ customers</strong> using Jetpack Compose and MVVM.
-              After graduation, I&apos;ll be joining Chase full-time on a mobile team.
+              I&apos;m an Android Development Engineer at{' '}
+              <strong className='text-foreground'>JPMorgan Chase</strong> using
+              Jetpack Compose and MVVM, working on the Chase Android app.
             </p>
             <p>
-              Previously I interned on Chase&apos;s web team, modernizing an internal
-              financial tool for 1000+ global legal entities, and at{' '}
-              <strong className='text-foreground'>OSU&apos;s Wexner Medical Center</strong>,
-              where I achieved 100% accessibility compliance across the Comprehensive Cancer Center&apos;s site.
+              Previously I interned on Chase&apos;s web team, modernizing an
+              internal financial tool for 1000+ global legal entities, and at{' '}
+              <strong className='text-foreground'>
+                OSU&apos;s Wexner Medical Center
+              </strong>
+              , where I achieved 100% accessibility compliance across the
+              Comprehensive Cancer Center&apos;s site.
             </p>
             <p className='text-xs'>
               🇫🇷 Fluent in French (Native / Bilingual proficiency)
@@ -81,20 +95,33 @@ const AboutPage = () => {
           <CardContent className='space-y-4 text-muted-foreground'>
             <ul className='ml-6 list-disc space-y-2'>
               <li>
-                Curating playlists and exploring music through{' '}
-                <strong className='text-foreground'>Plexamp</strong> — I built
-                an AI-powered playlist generator to scratch that itch.
+                Automating processes in my homelab or relating to music
+                discovery! I recently built a tool that works with{' '}
+                <strong className='text-foreground'>
+                  <a
+                    href='https://beets.io'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Beets
+                  </a>
+                </strong>{' '}
+                and serves as a frontend for quick library filtering and
+                deletion.
               </li>
               <li>
-                Gaming with friends or going deep into strategy and indie titles.
+                Traveling and eating with my friends, ask me about my favorite
+                spots in Columbus!
               </li>
               <li>
-                Tinkering with my home network — OpenWRT, Unifi, and self-hosted
-                services are a hobby in themselves.
+                Tinkering with my smart home. I&apos;d say that I&apos;m
+                building on this front, but honestly I&apos;m usually just
+                chasing a carrot on a stick.
               </li>
               <li>
-                Building and configuring custom PCs, including a Hackintosh on my
-                XPS 9570.
+                Building, configuring and repairing PCs and Laptops. Admittedly
+                this has become hard recently, but I&apos;ll gladly help anyone
+                out!
               </li>
             </ul>
           </CardContent>
@@ -110,20 +137,28 @@ const AboutPage = () => {
           <CardContent className='space-y-3 text-muted-foreground'>
             <ul className='ml-6 list-disc space-y-2'>
               <li>
-                <strong className='text-foreground'>JPMC Global Hackathon 2025</strong>{' '}
-                — 1st place out of 64 Columbus teams building an internal mobility assistant with NLP + OpenAI.
+                <strong className='text-foreground'>
+                  Internal Mobility - JPMC Global Hackathon 2025
+                </strong>{' '}
+                — 1st place out of 64 Columbus teams building an internal
+                mobility assistant with NLP + OpenAI.
               </li>
               <li>
-                <strong className='text-foreground'>CTRL-R (Code for Good)</strong>{' '}
-                — Challenge winner for Pyramid CDC, a digital literacy platform built in 24 hours.
+                <strong className='text-foreground'>
+                  CTRL-R - JPMC Code for Good 2023
+                </strong>{' '}
+                — 1st place project to make a digital literacy platform in 24
+                hours.
               </li>
               <li>
-                <strong className='text-foreground'>M.C. Jeter&apos;s Portfolio</strong>{' '}
-                — Delivered an estimated 25% uplift in sales and social engagement.
+                <strong className='text-foreground'>SnapVault</strong> — App
+                that houses a pipeline to archive a user&apos;s Snapchat
+                Memories for media ownership and portability.
               </li>
               <li>
-                <strong className='text-foreground'>HDNCHQ Server</strong>{' '}
-                — Self-hosted Plex, Nextcloud, and Vaultwarden with Docker, improving uptime from 40% to 95%.
+                <strong className='text-foreground'>HDNCHQ Server</strong> —
+                Self-hosted Plex, Nextcloud, and Vaultwarden with Docker,
+                improving uptime from 40% to 95%.
               </li>
             </ul>
             <Button asChild variant='outline' className='mt-2 text-primary'>
@@ -135,21 +170,26 @@ const AboutPage = () => {
         {/* Goals */}
         <Card className='shadow-md'>
           <CardHeader>
-            <CardTitle className='text-2xl font-bold'>What&apos;s Next</CardTitle>
+            <CardTitle className='text-2xl font-bold'>
+              What&apos;s Next
+            </CardTitle>
           </CardHeader>
           <CardContent className='space-y-4 text-muted-foreground'>
             <p>
-              After graduating from OSU in May 2026, I&apos;ll be joining
-              JPMorgan Chase full-time as a{' '}
-              <strong className='text-foreground'>Software Engineer on a mobile team</strong>.
               I&apos;m excited to go deeper on Android development with Jetpack
               Compose and to keep pushing on the kinds of products that reach
               people at scale.
             </p>
             <p>
               On the side, I&apos;m continuing to build out personal projects —
-              AI tooling, self-hosted infrastructure, and wherever curiosity takes
-              me next.
+              AI tooling, self-hosted infrastructure, and wherever curiosity
+              takes me next.
+            </p>
+            <p>
+              I&apos;m currently working on my project SnapVault and looking
+              forward to feedback and scaling it! Data ownership is something I
+              believe a lot in, and I hope to appeal to other likeminded people.
+              Check it out!
             </p>
             <Button asChild>
               <Link href='/contact'>Let&apos;s Connect</Link>
@@ -161,7 +201,9 @@ const AboutPage = () => {
       {/* Skills section */}
       <Card className='shadow-md'>
         <CardHeader>
-          <CardTitle className='text-2xl font-bold'>Skills &amp; Tools</CardTitle>
+          <CardTitle className='text-2xl font-bold'>
+            Skills &amp; Tools
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
