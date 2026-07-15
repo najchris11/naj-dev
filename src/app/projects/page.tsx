@@ -48,6 +48,7 @@ const ProjectModal = ({ project }: { project: Project }) => (
           src={`/images/${project.image}`}
           alt={project.imageDescription || project.title}
           fill
+          sizes='(max-width: 640px) 100vw, 512px'
           className='object-cover'
         />
       </div>
@@ -145,7 +146,7 @@ const ProjectModal = ({ project }: { project: Project }) => (
 const ProjectRow = ({ project, index }: { project: Project; index: number }) => (
   <Dialog>
     <DialogTrigger asChild>
-      <div className='group flex cursor-pointer items-start gap-4 rounded-lg border border-transparent px-3 py-4 transition-colors hover:border-border hover:bg-muted/40'>
+      <button className='group flex w-full cursor-pointer items-start gap-4 rounded-lg px-3 py-4 text-left transition-colors hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50'>
         {/* Thumbnail */}
         <div className='relative h-16 w-16 shrink-0 overflow-hidden rounded-md border border-border bg-muted sm:h-20 sm:w-20'>
           {project.image ? (
@@ -153,6 +154,7 @@ const ProjectRow = ({ project, index }: { project: Project; index: number }) => 
               src={`/images/${project.image}`}
               alt={project.imageDescription || project.title}
               fill
+              sizes='80px'
               className='object-cover'
               priority={index < 6}
             />
@@ -221,7 +223,7 @@ const ProjectRow = ({ project, index }: { project: Project; index: number }) => 
           size={16}
           className='mt-1 shrink-0 text-muted-foreground transition-colors group-hover:text-primary'
         />
-      </div>
+      </button>
     </DialogTrigger>
     <ProjectModal project={project} />
   </Dialog>
@@ -272,6 +274,7 @@ const ProjectsPage = () => {
           </div>
           <input
             type='search'
+            aria-label='Search projects by name or tech'
             placeholder='Search by name or tech…'
             value={search}
             onChange={(e) => setSearch(e.target.value)}
