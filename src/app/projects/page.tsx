@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/dialog';
 import { Project } from '@/app/types';
 import Link from 'next/link';
-import { FaGithub, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaExternalLinkAlt } from 'react-icons/fa';
 import { FiCheckCircle, FiChevronRight } from 'react-icons/fi';
 import projectsData from '@/data/projects.json';
 
@@ -133,6 +133,14 @@ const ProjectModal = ({ project }: { project: Project }) => (
         </Button>
       ) : (
         <span className='text-xs text-muted-foreground'>Repository not public</span>
+      )}
+      {project.liveUrl && (
+        <Button asChild variant='outline' size='sm' className='gap-1.5'>
+          <Link href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
+            <FaExternalLinkAlt size={14} />
+            Visit site
+          </Link>
+        </Button>
       )}
       <DialogClose asChild>
         <Button variant='ghost' size='sm' className='ml-auto'>

@@ -5,6 +5,7 @@ export interface Project {
   imageDescription?: string | null;
   githubRepo?: string | null;
   youtubeUrl?: string | null;
+  liveUrl?: string | null;
   techStack?: string[];
   role?: string;
   achievements?: string[];
