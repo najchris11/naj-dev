@@ -6,6 +6,7 @@
     "imageDescription": null,
     "githubRepo": "https://github.com/najchris11/snapchat-memories-downloader",
     "youtubeUrl": null,
+    "liveUrl": "https://snapvault.naj-dev.com",
     "techStack": [
       "Kotlin Multiplatform",
       "Compose Desktop",
